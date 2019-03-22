@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang ="en">
+	<head>
+		<title>CSS</title>
+		<link rel="icon" href="images/bumble.jpg">
+		<link rel ="stylesheet" type="text/css" href="style/CSSstyle.css"> 
+	</head>
+	
+	<body>
+		<div id="navbar" >
+			<div id="logo">
+				<a href="index.html"><img src="images/bumble.jpg" alt="LogoName">
+				</a>
+			</div>
+ 
+			<div id="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="hyper.html">HTML</a></li>
+				<li><a href="cascade.html">CSS</a></li>
+				<li><a href="java.html">JS</a></li>
+			</ul>
+			</div>
+		</div>
+ 
+		<div id = "background">
+		<img src="images/background.jpeg" alt="frontimage">
+		</div>
+
+		<section id="content">
+			<div class="CSS">
+				<main>
+                <div id="wrapper">
+                	<div id ="topics">
+                       <h2> What is CSS?</h2>
+					</div>
+					
+                    <p>
+                        CSS or Cascading StyleSheet was developed by Hakon Wium Lee (LHSS) <img src="images/hakon.png">& Bert Bos (JOP)<img src="images/BertBos.png">
+                    </p>
+					
+                    <ul>
+                        <li>
+                        	It is a language used to specify the presentation (e.g. layout, formatting, fonts, colors, etc.)of structurally marked up documents (e.g., HTML, XML, SVG, MathMl, etc.)
+                        <li>It is used to specify how websites/documents are displayed/presented.
+                        <hr>
+					</ul>
+						
+						
+					<div id ="topics">
+                       <h2> Why use CSS?</h2>
+					</div>
+					<p>
+						Insert some text here. You can make it in paragraph form or in list form. Please refer to our docs.
+					</p>
+					<hr>
+					
+					
+                    <div id = "topics">
+                        <h2> CSS Version History </h2> 
+						</div>
+						<ul>
+						<li><strong>CSS Level 1 (CSS 1, W3C Recommendation, December 17, 1996). </strong>
+							<ul>
+							<li> The first official W3C Recommendation for CSS specification.
+							</ul>
+                        <li><strong>CSS Level 2 (CSS 2, W3C Recommendation, May 1998).</strong>
+							<ul>
+							<li> A simple visual formatting model for HTML tags.<br>
+							</ul>
+                        <li><strong>CSS Level 2.1 Revision 1 (CSS 2.1, W3C Recommendation, June 2011).</strong>
+						<ul>
+						<li>Allows users and authors to separate the content and the presentation style of the documents.
+						</ul>
+                        <li><strong>CSS Level 3</strong>
+						<ul>
+                        <li>Modular approach to CSS development(as opposed to the monolithic specification of CSS 2.1)
+						</ul>
+						</ul>
+                        <hr>
+
+
+                        <div id = "topics">
+                        <h2> HTML Style Sheets </h2> 
+						</div>
+						<ul>
+                        <li>Sources of styles for HTML documents
+                        <ul>
+                        	<li><strong>Author Styles</strong>
+                        	<br> &#9755;external (a.k.a <em>linked</em>) stylesheets (recommended)
+								<ul>
+								&#9758;These stylesheet doesn't contain any html tags and it should be saved with the <em>.css</em> extension.<br>
+								&#9758;It can be applied to many pages
+								</ul>
+                        	&#9755;Embedded (a.k.a <em>internal</em>) stylesheets
+                        	<br> &#9755;Inline styles
+                        	<li><strong>User Styles</strong>
+                        	<br> &#9755;Some browsers provide (non-standard)alternatives through plugins extensions (e.g., <em>Stylish</em>)
+                        	<li><strong>User Agent Styles</strong>
+                        	<br> &#9755;Default styles from CSS 2.1. that browsers try to web pages.<br>
+                        </ul>
+						</ul>
+                        <hr>
+						
+					
+					<div>
+					<h2> CSS Syntax</h2>
+					</div>
+					<p>
+						Insert some text here and an image wherein we show the rule-set or the style. You can make it in paragraph form or in list form.
+					</p>
+					<hr>
+						
+                        <div id ="topics">
+                        <h2> CSS Statements </h2> 
+						</div>
+                        Insert some text here.
+ 						<hr>
+
+ 						<div id ="topics">
+ 						<h2> CSS Selectors </h2> 
+						</div>
+						<ul>
+ 						<li><strong>Selector</strong> - is an HTML tag wherein it is used in CSS rule to determine which style will be applied.
+ 						<li> <strong>Selector Syntax</strong> - chain of one or more sequences of simple selectors separated by combinators, with one pseudo-element, possibly appended to the last sequence and always start with type selector  and universal selector.
+						<li> <strong>Selector Group</strong> - comma-separated list of selectors representing the union of all elements selected by each of the selectors in the list.
+ 						<li> <strong>SIMPLE SELECTOR</strong>
+ 						<ul>
+ 							<li> <strong>Type selectors</strong>
+ 							<li> <strong>ID selectors</strong>
+ 							<li> <strong>Class selectors</strong>
+							<li> <strong>Universal selectors</strong>
+							<li> <strong>Attribute selectors</strong>
+							<ul>
+ 							<li><em>[attribute=value]</em> - Selects all elements with target="_blank"
+ 							<li><em>[attribute~=value]</em> - Selects all elements with a title attribute containing the value you put inside the attribute.
+ 							<li><em>[attribute !=value]</em> - Select elements that either don't have the specified attribute.
+							</ul>
+							<li> <strong>Pseudo - classes</strong>
+							<ul>
+							<li><strong>Dynamic pseudo-classes </strong>( e.g., <em>:link</em> , <em>:visited</em> )
+							<li><strong>User-action pseudo-classes </strong>( e.g., <em>:hover</em> , <em>:active</em> , <em>:focus</em> )
+							<li><strong>Target pseudo-classes</strong> ( e.g., <em>:target</em> )
+							<li><strong>Language pseudo-classes </strong>( e.g., <em>:lang</em> )
+							<li><strong>UI element states pseudo-classes</strong> ( e.g., <em>:enabled</em> , <em>:disabled</em> , <em>:checked</em> , <em>:indeterminate</em> )
+							<li><strong>Structural pseudo-classes </strong>( e.g., <em>:root</em> , <em>:first-child</em> , <em>:last-child</em> , <em>:only-child</em> , <em>:nth-child()</em>, <em>:nth-last-child()</em> , <em>:first-of-type</em> , <em>:last-of-type</em> , <em>:only-of-type</em> , <em>:empty</em> , <em>:nth-of-type()</em> , <em>:nth-last-of-type()</em> )
+							<li><strong>Pseudo-elements </strong>( e.g., <em>:first-letter</em> , <em>::first-letter</em> , <em>:before</em> , <em>::before</em> )
+							</ul>
+							<li> <strong>Combinators</strong>
+							<ul>
+							<li><strong>Descendant combinator </strong>( i.e., <em>whitespace</em> , <em>space</em> , <em>tab</em> , <em>line feed</em> , <em>carriage</em> , <em>return</em> , <em>form feed</em> )
+							<li><strong>Child combinator (>) </strong>
+							<li><strong>Sibling combinator </strong>
+							</ul>
+ 						</ul>
+						</ul>
+ 						<hr>
+
+
+                        <div id ="topics">
+                        <h2> CSS Rule Precedence </h2>
+						</div> 
+						<ul>
+                        <li> <strong>CSS Rule Precedence</strong> - From highest to lowest priority and an HTML element may be the subject of the selectors of multiple style rules.
+                        <br> &emsp;&emsp;&#9657; when such rules target different properties, their effects cascade (i.e., are combined )
+                        <br> &emsp;&emsp;&#9657; when the styles involve the same property, they conflict and must be resolved such that only one style is applied.
+                        <ul>
+                        	<li><strong> By origin and importance</strong>
+                        		<br> &emsp;&emsp;&#9657;user agent important declarations
+                        		<br> &emsp;&emsp;&#9657;user importance declarations
+                        		<br> &emsp;&emsp;&#9657;author important declarations
+                        		<br> &emsp;&emsp;&#9657;author normal declarations
+                        		<br> &emsp;&emsp;&#9657;user normal declarations
+                        		<br> &emsp;&emsp;&#9657;user agent normal declarations
+                        	<li><strong>By specificity</strong>- The higher the priority
+                        		<br> &emsp;&emsp;&#9657;Inline Style
+                        		<br> &emsp;&emsp;&#9657;Number of ID selectors
+                        		<br> &emsp;&emsp;&#9657;Number of class selectors, attribute selectors, pseudo-class
+                        		<br> &emsp;&emsp;&#9657;Number of type selectors & pseudo-elements
+                        	<li> <strong>By order</strong> - If it comes later, it goes first.
+                        </ul>
+						</ul>
+                        <hr>
+						
+
+                        <div id ="topics">
+                        <h2> CSS Declarations </h2>
+						</div>
+						
+                        <li><strong>Properties</strong>
+                        <p>
+						Insert some text here. Please refer to our docs.
+						</p>
+                        <hr>
+
+
+                        <div id ="topics">
+                        <h2>CSS Preprocessors, Frameworks and Polyfills</h2>
+						</div>
+						<p>
+						Insert some text here. Please refer to our docs.
+						</p>
+						
+		  		</div>
+		  	</main>
+</section>
+		
+		<footer>
+			<p>
+			<a href="https://github.com/"> <img src="images/git.png" width="35" height="35" alt="git"></a>
+			<a href="https://www.linkedin.com/"> <img src="images/linked.png" width="35" height="35" alt="linked"></a>
+			<a href="https://mail.google.com/mail/u/0/#inbox"> <img src="images/gmail.png" width="35" height="35" alt="gmail"></a>
+			<a href="https://www.facebook.com/"> <img src="images/facebook.png" width="35" height="35" alt="facebook"></a>
+			&copy; Copyright 2019. TeamBee<img src="images/bumble.jpg" alt="LogoName" width= "35" height="35">All Rights Reserved.</p>	
+		</footer>
+		
+	</body>
+</html>
