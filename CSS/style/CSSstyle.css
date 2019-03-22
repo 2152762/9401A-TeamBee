@@ -1,0 +1,56 @@
+#background{
+	width: 100vw;
+	height: 100%;
+}
+
+#navbar{
+	position: fixed;
+	overflow: hidden;
+	margin: 0.05 em auto; /**Edit this part**/
+	width: 100%;
+}
+ 
+#logo{
+	
+    padding-bottom: 10px;
+    padding-top: 3px;
+
+}
+#logo img{ /**Resize the image**/
+	left: 0;
+	width: 15%;
+	height: auto;
+	}
+
+#menu{
+	position: absolute;
+	top: 1em; /**Position of the nav in the y-axis**/
+	right: 5%; /**Position of the nav**/
+	text-decoration: none;
+}
+
+#menu ul{
+	display: inline-block;
+}
+
+#menu li{
+	display: block;
+	float: left;
+	text-align: center;
+	font-size: 150%;
+	/**font-style: arial;**/
+}
+
+#menu li:before{
+	padding: 3em 1.5em; /**Spaces in between of nav/menu**/
+	content: "//";
+	color: rgba(1,2,0,.6); /**Edit color. Not working**/
+}
+	#menu li a, #menu li span
+	{
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 1em;
+		color: rgba(0,0,0,.4);
+	}
