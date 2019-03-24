@@ -1,0 +1,149 @@
+<style type="text/css">
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+	margin: auto;
+	padding: 10px;
+	font-family: Calibri;
+}
+
+footer{
+	border-style: solid;
+	position: relative;
+	clear: both;
+	text-align: center;
+}
+
+.container{
+	width: 100%;
+	min-width: 500px;
+	height: auto;
+	min-height: 1vh;
+}
+
+.header{
+	text-align: center;
+	border-style: solid;
+}
+
+.header h1{
+	font-size: 50px;
+}
+
+.topnav{
+	overflow: hidden;
+	border-right: solid;
+	border-left: solid;
+}
+
+.topnav a{
+	float: left;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	padding: 14px 16px;
+	width: 100px;
+}
+
+.column{
+	border-style: solid;
+	float: left;
+	padding: 0 20px;
+	height: 300px;
+	min-height: 300px;
+	position: relative;	
+}
+
+.leftcolumn{
+	width: 20%;
+	overflow: auto;
+}
+
+.middlecolumn{
+	width: 50%;
+	overflow: auto;
+}
+
+.rightcolumn{
+	width: 30%;
+	overflow: auto;
+}
+
+</style>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML</title>
+</head>
+<body>
+<div id="container">
+	<div class="header">
+		<h1>TeamBee</h1>
+		<h2>HTML5 Tutorial</h2>
+	</div>
+
+	<div class="topnav">
+		<a class="Home" href="#">Home</a>
+		<a class="HTML" href="#">HTML</a>
+		<a class="CSS" href="#">CSS</a>
+		<a class="JS" href="#">JS</a>		
+	</div>
+
+		<div class="column leftcolumn">
+			<div class="box">
+				<h2>HTML TAGS</h2>
+			<ul>
+				<li><a class="tags" href="#">&lt;html&gt;</a></li>
+				<li><a class="tags" href="#">&lt;a&gt;</a></li>
+				<li><a class="tags" href="#">&lt;br&gt;</a></li>
+				<li><a class="tags" href="#">&lt;div&gt;</a></li>
+				<li><a class="tags" href="#">&lt;h1-h6&gt;</a></li>
+				<li><a class="tags" href="#">&lt;li&gt;</a></li>
+				<li><a class="tags" href="#">&lt;ul&gt;</a></li>
+				<li><a class="tags" href="#">&lt;table&gt;</a></li>
+				<li><a class="tags" href="#">&lt;td&gt;</a></li>
+				<li><a class="tags" href="#">&lt;tr&gt;</a></li>
+			</ul>
+			</div>
+		</div>
+
+		<div class="column middlecolumn">
+			<div class="box">
+				<h2>Description</h2>
+			<ul>
+				<li>The&nbsp;&lt;!DOCTYPE html&gt;&nbsp;declaration defines this document to be HTML5</li>
+				<li>The&nbsp;&lt;html&gt;&nbsp;element is the root element of an HTML page</li>
+				<li>The&nbsp;&lt;head&gt;&nbsp;element contains meta information about the document</li>
+				<li>The&nbsp;&lt;title&gt;&nbsp;element specifies a title for the document</li>
+				<li>The&nbsp;&lt;body&gt;&nbsp;element contains the visible page content</li>
+				<li>The&nbsp;&lt;h1&gt;&nbsp;element defines a large heading</li>
+				<li>The&nbsp;&lt;p&gt;&nbsp;element defines a paragraph</li>
+			</ul>	
+			</div>
+		</div>
+
+		<div class="column rightcolumn">
+			<div class="box">
+				<h2>SampleCode</h2>
+				<p>&lt;html&gt;</p>
+				<p>&lt;head&gt;</p>
+				<p>&lt;title&gt;TeamBee Tutorials&lt;/title&gt;</p>
+				<p>&lt;/head&gt;</p>
+				<p>&lt;body&gt;</p>
+				<p>&lt;h1&gt;TeamBee&lt;/h1&gt;</p>
+				<p>&lt;p&gt;HTML5 Tutorial&lt;/p&gt;</p>
+				<p>&lt;/body&gt;</p>
+				<p>&lt;/html&gt;</p>
+			</div>
+		</div>
+
+	<footer>
+			<p id="sched">9401A 11:00 - 12:00 MTh</p>
+	</footer>	
+</div>
+</body>
+</html>
