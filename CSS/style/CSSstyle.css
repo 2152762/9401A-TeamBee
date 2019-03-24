@@ -4,31 +4,9 @@
 	height: 100%;
 }
 
-#navbar{
-    top: 0;
-	position: fixed;
-	overflow: hidden;
-	margin: 0.05 em auto; /**Edit this part**/
-	width: 100%;
-}
- 
-#logo{
-
-    padding-bottom: 10px;
-    padding-top: 3px;
-
-}
-#logo img{ /**Resize the image**/
-    
-    padding-left: 93%;
-	left: 0;
-	width: 6%;
-	height: auto; 
-	}
-
 #menu{
 	position: fixed;
-	top: 1em; /**Position of the nav in the y-axis**/
+	top: 0.5em; /**Position of the nav in the y-axis**/
 	right: 7%; /**Position of the nav**/
 	text-decoration: none;
 }
@@ -38,13 +16,12 @@
 	display: inline-block;
 }
 
-#menu li{
-	display: block;
-	float: left;
-	text-align: center;
-	font-size: 150%;
-	/**font-style: arial;**/
-}
+				#menu li{
+					display: block;
+					float: left;
+					text-align: center;
+					font-size: 150%;
+				}
 
 #menu li:before{
 	padding: 3em 1.5em; /**Spaces in between of nav/menu**/
