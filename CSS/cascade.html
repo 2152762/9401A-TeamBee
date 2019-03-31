@@ -13,44 +13,79 @@
 				<li><a href="hyper.html">HTML</a></li>
 				<li><a href="cascade.html">CSS</a></li>
 				<li><a href="javascript.html">Javascript</a></li>
+				<li><a href="reference.html">Reference</a></li>
 			</ul>
 		</div>
- 
-		<div id = "background">
-		<img src="images/background.jpeg" alt="frontimage">
+		
+		<div class="sidenav">
+			<a href="#what">What is CSS?</a>
+			<a href="#Advantages">Advantages of CSS</a>
+			<a href="#Version">CSS Version History</a>
+			<a href="#Style">HTML Style Sheets</a>
+			<a href="#Syntax">CSS Syntax</a>
+			<a href="#Selector">CSS Selectors</a>
+			<a href="#Precedence">CSS Rule Precedence</a>
+			<a href="#Statement">CSS Statements</a>
+			<a href="#Preprocessors">CSS Preprocessors</a>
+			<a href="#Frameworks">CSS Frameworks</a>
+			<a href="#Polyfills">CSS Polyfills</a>
+			
 		</div>
 
 		<section id="content">
+		<div id = "background">
+		<img src="images/background.jpeg" alt="frontimage">
+		</div>
 			<div class="CSS">
 				<main>
                 <div id="wrapper">
                 	<div id ="topics">
-                       <h2> What is CSS?</h2>
+                       <a name="what"><h2>What is CSS?</h2> </a>
 					</div>
-					
-                    <p>
-                        CSS or Cascading StyleSheet was developed by Hakon Wium Lee (LHSS) <img src="images/hakon.png">& Bert Bos (JOP)<img src="images/BertBos.png">
-                    </p>
-					
                     <ul>
                         <li>
-                        	It is a language used to describe the presentation (e.g. layout, formatting, fonts, colors, etc.)of structurally marked up documents (e.g., HTML, XML, SVG, MathMl, etc.)
-                        <li>It is used to specify how websites are to be displayed.
-                        <hr>
+                        	CSS is a design language used to describe the presentation (e.g. layout, formatting, fonts, colors, etc.)of webpages (e.g., <em>HTML, XML </em> etc.)
+                        <li>
+							It is used to specify how websites are to be displayed.
+						<li> It is developed by Hakon Wium Lee and Bert Bos.
 					</ul>
-						
+					<div class="picture">
+					<div class="picture1">
+						<img src="images/hakon.png" alt="Hakon" class="image" style="width:30%">
+					<div class="middle1">
+						<div class="text">Hakon Wium Lee</div>
+					</div>
+					</div>
+					
+					<div class="picture2">
+						<img src="images/BertBos.png" alt="Bert" class="image" style="width:30%">
+					<div class="middle2">
+						<div class="text1">Bert Bos</div>
+					</div>
+					</div>
+					</div>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<hr>
 						
 					<div id ="topics">
-                       <h2> Why use CSS?</h2>
+                       <a name="Advantages"><h2> Advantages of CSS</h2></a>
 					</div>
-					<p>
-						Insert some text here. You can make it in paragraph form or in list form. Please refer to our docs.
-					</p>
+					<ul>
+                        <li> It improves website presentation.
+						<li> Saves time.
+						<li> Avoids duplication and Easier to maintain.
+						<li> It separates the content of the document and the details of the style. 
+					</ul>
 					<hr>
 					
 					
                     <div id = "topics">
-                        <h2> CSS Version History </h2> 
+                        <a name="Version"><h2> CSS Version History </h2> </a>
 						</div>
 						<ul>
 						<li><strong>CSS Level 1 (CSS 1, W3C Recommendation, December 17, 1996). </strong>
@@ -74,7 +109,7 @@
 
 
                         <div id = "topics">
-                        <h2> HTML Style Sheets </h2> 
+                        <a name="Style"><h2> HTML Style Sheets </h2> </a>
 						</div>
 						<ul>
                         <li>Sources of styles for HTML documents
@@ -94,27 +129,27 @@
                         </ul>
 						</ul>
                         <hr>
-						
 					
-					<div>
-					<h2> CSS Syntax</h2>
-					</div>
-					<img src="images/SYNTAX.jpg">
+					<div id="topics">
+					<a name="Syntax"><h2> CSS Syntax</h2>
+					</div></a>
 					<ul>
 					<li><strong>Selector</strong> - used to select the HTML element to style.
 					<li><strong>Declaration Block</strong> - contains one or more declaration that has CSS property and value.
+					<li><strong>Property</strong> - an attribute of HTML tag. HTML attributes are converted into CSS properties.
+					<li><strong>Value</strong> - assigned to properties. 
 					</ul>
+					<img src="images/SYNTAX.jpg" alt="syntax">
+					<ul>
+					<li> <strong>CSS Comments</strong> - Comments are used to explain your code. A CSS comment begins with "<em>/*</em>" and ends with "<em>*/</em>".
+					</ul>
+					<img src="images/CssComment.jpg" alt="comment">
+					
 					<hr>
-						
-                        <div id ="topics">
-                        <h2> CSS Statements </h2> 
-						</div>
-                        Insert some text here.
- 						<hr>
 
- 						<div id ="topics">
- 						<h2> CSS Selectors </h2> 
-						</div>
+ 					<div id ="topics">
+ 						<a name="Selector"><h2> CSS Selectors </h2> </a>
+					</div>
 						<ul>
  						<li><strong>Selector</strong> - is an HTML tag wherein it is used in CSS rule to determine which style will be applied.
  						<li> <strong>Selector Syntax</strong> - chain of one or more sequences of simple selectors separated by combinators, with one pseudo-element, possibly appended to the last sequence and always start with type selector  and universal selector.
@@ -131,7 +166,7 @@
  							<li><em>[attribute~=value]</em> - Selects all elements with a title attribute containing the value you put inside the attribute.
  							<li><em>[attribute !=value]</em> - Select elements that either don't have the specified attribute.
 							</ul>
-							<li> <strong>Pseudo - classes</strong>
+							<li> <strong>Pseudo-classes</strong> - a keyword added to the end of a selector, which is used to specify the element you want to style.
 							<ul>
 							<li><strong>Dynamic pseudo-classes </strong>( e.g., <em>:link</em> , <em>:visited</em> )
 							<li><strong>User-action pseudo-classes </strong>( e.g., <em>:hover</em> , <em>:active</em> , <em>:focus</em> )
@@ -153,7 +188,7 @@
 
 
                         <div id ="topics">
-                        <h2> CSS Rule Precedence </h2>
+                        <a name="Precedence"><h2> CSS Rule Precedence </h2></a>
 						</div> 
 						<ul>
                         <li> <strong>CSS Rule Precedence</strong> - From highest to lowest priority and an HTML element may be the subject of the selectors of multiple style rules.
@@ -177,25 +212,115 @@
 						</ul>
                         <hr>
 						
-
+						<div id ="topics">
+                        <a name="Statement"><h2> CSS Statements </h2> </a>
+					</div>
+                        <ul>
+						<li><strong>At-rules</strong> - used in CSS to convey metadata, descriptive information or other conditional information. It starts with "<em>@</em>" sign followed by an identifier(rule) then a syntax block, ending with a "<em>;</em>" semicolon.
+							<ul>
+							<li>Metadata
+								<ul>
+								<li><em>@charset</em>
+								<li><em>@import</em>
+								</ul>
+							
+							<li>Descriptive Information
+								<ul>
+									<li><em>@font-face</em>
+								</ul>
+							<li>Conditional Information
+								<ul>
+									<li><em>@media</em>
+									<li><em>@document</em>
+								</ul>
+							</ul>
+						
+						<h1>INSERT SOME EXAMPLE HERE. </h1>
+						
+						<li><strong>Nested Statements</strong> - a subset of <em>at-rule</em>. 
+							<ul>
+							<li><em>@media</em> - The device which runs the browser matches the expressed condition.
+							<li><em>@supports</em> - The browser supports the tested feature.
+							<li><em>@document</em> - Content page matches some of the conditions.
+						</ul>
+						</ul>
+						
+						<h1>INSERT SOME EXAMPLE HERE. </h1>
+ 						<hr>
+						
+						
+						
                         <div id ="topics">
-                        <h2> CSS Declarations </h2>
+                        <a name="Declarations"><h2> CSS Declarations </h2></a>
 						</div>
 						
                         <li><strong>Properties</strong>
-                        <p>
-						Insert some text here. Please refer to our docs.
-						</p>
+                        <ul>
+                        	<li>Shorthand Properties
+                        	<li>allows authors set several property value in a single line (e.g., <em>border-width</em>)
+                        	<li>vendor specific extensions (a.k.a. <em>vendor prefixes</em>)
+                        	<ul>
+								<li>used by browser vendors as a prefix for the names of experimental or non-standard CSS properties. (e.g., <em>-webkit-</em> , <em>-moz-</em> , <em>-o-</em> , <em>-ms-</em>)
+								<li>custom properties a.k.a, CSS variables (experimental). Property names prefixed with <strong>"- -"</strong>, representing a value.
+							</ul>
+                        </ul>
+                        <li><strong>Values</strong>
+                        	<ul>
+                        		<li><strong>keywords</strong>
+								<li>numbers(integers & reals indecimal notation)
+								<li><strong>value processing</strong>
+								<br> &emsp;&emsp;&emsp;&emsp;&#9657; declared, cascade, specified, computed, used, actual values.
+								<br>&emsp;&emsp;&emsp;&emsp;&#9657; Value types - Keywords (CSS wide keywords (e.g., initial , inherit, unset) , property-specific keywords)
+								<li><strong>dimensions</strong>
+									<br>&emsp;&emsp;&emsp;&emsp;&#9657;length, angle, duration, frequency, resolution
+								<li><strong>length units:</strong>
+									<br>&emsp;&emsp;&emsp;&emsp;&#9657;font relative: em, ex, ch, rem
+									<br>&emsp;&emsp;&emsp;&emsp;&#9657;viewport precentage: vw, vh, vmin, vmax
+								<li><strong>absolute lengths</strong>: cm, mm q, in, pt ,pc ,px
+								<li><strong>angle units</strong>: deg, grad, rad, turn
+								<br>&emsp;&emsp;&emsp;&emsp;&#9657; used in some gradient and transform functions
+								<li><strong>duration units</strong>:  s, ms
+								<br>&emsp;&emsp;&emsp;&emsp;&#9657; used in animation, transition, and related properties
+								<li><strong>frequency units</strong>: hz, khz
+								<br>&emsp;&emsp;&emsp;&emsp;&#9657; usually introduced in CSS2 for the (obsoleted) aural media type: reintroduced in CSS3 but currently unused.
+								<li><strong>resolution units</strong>: dpi, dpem, dppx
+								<li><strong>percentages</strong>
+								<br>&emsp;&emsp;&emsp;&emsp;&#9657; number with a % suffix
+								<br>&emsp;&emsp;&emsp;&emsp;&#9657; calculated as a percentage of some value (usually taken from the parent-element) 
+								<li><strong>URLs and URIs</strong>
+								<br>&emsp;&emsp;&emsp;&emsp;&#9657; URL() function with an absolute or relative (to the stylesheet) URL parameter
+								<br>&emsp;&emsp;&emsp;&emsp;&#9657; denotes a pointer to a resource, such as an image or a font.
+								<li><strong>colors</strong>
+								<br>&emsp;&emsp;&emsp;&emsp;&#9657; color keywords: red, blue, white, etc.
+								<br>&emsp;&emsp;&emsp;&emsp;&#9657; RGB hexadecimal notation: #fff , #f00 , #f00f, etc.
+								<br>&emsp;&emsp;&emsp;&emsp;&#9657; RGB functions: rgb(255,0,0) , HSL functions: hsl(0,100%,50%) or hsla (0,100%,50%,1), Currentcolor: transparent
+								<li><strong>strings</strong>
+								<br>&emsp;&emsp;&emsp;&emsp;&#9657; delimited by single quotes (') or double qoutes(")
+								<li><strong>functions</strong>: calc(), attr(), counter(), counters(), linear-gradient(), radial-gradient(), translate(), scale(), rotate()
+                        	</ul>
+
                         <hr>
 
 
                         <div id ="topics">
-                        <h2>CSS Preprocessors, Frameworks and Polyfills</h2>
-						</div>
-						<p>
-						Insert some text here. Please refer to our docs.
-						</p>
-						
+                        <a name="Preprocessors"><h2>CSS Preprocessors, Frameworks and Polyfills</h2> </div></a>
+                        <li><strong>Preprocessors</strong>
+                        	<ul>
+                        	<li>generates CSS using a custom language syntax that typically includes features that don't exist
+		  					in pure CSS </ul>
+		  				<li><a name="Frameworks"><strong>CSS Frameworks</strong></a>
+		  					<ul>
+		  						<li>provides functionality without having to write CSS.
+		  						<li>Set of codes already provided by other users which other developers can use in developing their website.
+		  						<li>provides predefined CSS design functionality that can be reused, extended, or customized (e.g., bootstrap, materialize, etc.)
+		  					</ul>
+		  				<li><a name="Polyfills"><strong>Polyfills</strong></a>
+		  					<ul>
+		  						<li>allows users/developers to make use of the features of the browsers.
+		  						<li>provides features that developers expect browsers to provide natively.
+		  						<br>&emsp;&emsp;&emsp;&emsp;&#9657; E.g., modernizr, selectivizr, etc.
+		  					</ul>
+							</ul>
 		  		</div>
 		  	</main>
 </section>
@@ -205,8 +330,8 @@
 			<a href="https://github.com/"> <img src="images/git.png" width="35" height="35" alt="git"></a>
 			<a href="https://www.linkedin.com/"> <img src="images/linked.png" width="35" height="35" alt="linked"></a>
 			<a href="https://mail.google.com/mail/u/0/#inbox"> <img src="images/gmail.png" width="35" height="35" alt="gmail"></a>
-			<a href="https://www.facebook.com/"> <img src="images/facebook.png" width="35" height="35" alt="facebook"></a>
-			&copy; Copyright 2019. TeamBee<img src="images/bumble.jpg" alt="LogoName" width= "35" height="35">All Rights Reserved.</p>	
+			<a href="https://www.facebook.com/"> <img src="images/facebook.png" width="35" height="35" alt="facebook"></a><br>
+			&copy; Copyright 2019. TeamBee. All Rights Reserved.</p>
 		</footer>
 		
 	</body>
