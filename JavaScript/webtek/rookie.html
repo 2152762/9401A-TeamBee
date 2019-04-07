@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+	<head>
+		<link rel = "icon" href = "../webtek/imAGEs/icons/kill-me-now.ico">
+
+		<title> ROOKIE </title>
+
+		<meta charset = "UTF-8">
+		<meta NAME = "viewport" content = "width=device-width, initial-scale=1">
+
+		<link rel = "stylesheet" type = "text/css" href = "https://www.w3schools.com/w3css/4/w3.css">
+		<link rel = "stylesheet" type = "text/css" href = "https://fonts.googleapis.com/css?family=Raleway">
+		<link rel = "stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel = "stylesheet" type = "text/css" href = "../webtek/CSS/styles.css">
+	</head>
+
+	<body>
+		<br>
+		<div class = "H-PPWS w3-large"> Advanced to the last level of JS </div>
+		<div class = "L-PPWS w3-bar-item w3-wide w3-xxlarge w3-animate-opacity" style = "color: green">
+			<span class = "span-rookie"><b> ROOKIE </span></b>
+		</div>
+
+		<div class = "LOGO">
+			<br>
+			<img src = "../webtek/imAGEs/icons/rookie.ico" width = "170" height = "160" alt = "rookie">
+		</div>
+
+		<br> <br> <br>
+		<div class = "H w3-container w3-padding-64"></div>
+
+		<br> <br> <br> <br>
+		<div class = "w3-row-padding w3-center" id = "top">
+			<span class = "SPAN-JS"><b> J a v a S c r i p t </b></span>
+		</div>
+
+		<br> <br> <br> <br>
+		<!-- SAMPLE -->
+		<div class = "w3-container w3-center w3-dark-grey" style = "padding: 128px 16px">
+			<div class = "menu">
+				<nav>
+					<ul>
+						<li><a href = "#new"> new </a></li>
+						<li><a href = "#this"> this </a></li>
+						<li><a href = "#var"> var </a></li>
+						<li><a href = "#const"> const </a></li>
+						<li><a href = "#let"> let </a></li>
+						<li><a> extras </a>
+							<ul>
+								<li>
+								  	<a class = "A-BONUS" href = "#bonus">
+								  		<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+								  		BONUS 
+								  	</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<br> <br>
+			<p class = "w3-xlarge"> JavaScript . Operators </p>
+			<p> A D D I T I O N A L </p>
+
+			<div class = "w3-row-padding" style = "margin-top: 64px">
+				<div class = "w3-section" id = "new">
+					<ul class = "w3-ul w3-white w3-hover-shadow">
+						<li class = "w3-black w3-xlarge w3-padding-32"> new
+							<span class = "w3-opacity w3-large"><br> operator <br></span>
+						</li>
+
+						<li class = "w3-padding-8">
+							<script type = "text/javascript">
+							    var myObj = new Object();
+
+							    myObj.NAME = "Franz Vittoria";
+							    myObj.ADDRESS = "Legazpi, Albay";
+							    myObj.AGE = 20;
+							    myObj.MARRIED  = false;
+
+							    console.log(myObj);
+							    document.writeln("<b> OUTPUT : </b>", "<br>", "Object { NAME: Franz Vittoria, ADDRESS: Legazpi, Albay, AGE: 20, MARRIED: false }");
+							</script>
+						</li>
+
+						<div class = "UL-CODE w3-section w3-half">
+							<ul class = "w3-ul w3-white">
+								<li class = "LIST-CODE w3-padding-32"> C O D E
+									<br> <br>
+								</li>
+
+								<li class = "CODE w3-padding-8">
+									&lt script type = "text / javascript" &gt
+									<br>
+									    <i> var </i> myObj = new <i> Object </i>();
+									    <br> <br>
+
+									    myObj.NAME = "Franz Vittoria";
+									    <br>
+									    myObj.ADDRESS = "Legazpi, Albay";
+									    <br>
+									    myObj.AGE = 20;
+									    <br>
+									    myObj.MARRIED  = <i> false </i>;
+									    <br>
+									&lt / script &gt
+								</li>
+							</ul>
+						</div>
+
+						<li class = "CIRCLE-BG w3-padding-24">
+							<img src = "../webtek/images/circle.png" width = "60" height = "60" alt = "circle">
+						</li>
+					</ul>
+				</div>
+
+
+				<br> <br>
+				<a href = "#top" class = "BUTTON w3-button">
+					<i class = "fa fa-arrow-up w3-margin-right"></i> To the top
+				</a>
+
+
+				<br> <br> <br>
+				<!-- 2nd EXAMPLE -->
+				<div class = "w3-section" id = "this">
+					<ul class = "w3-ul w3-white w3-hover-shadow">
+						<li class = "w3-black w3-xlarge w3-padding-32"> this
+							<span class = "w3-opacity w3-large"><br> operator <br></span>
+						</li>
+
+						<li class = "w3-padding-8">
+							<script type = "text/javascript">
+							    function employee(NAME, ADDRESS, AGE, SINGLE) {
+							       this.NAME = NAME;
+							       this.ADDRESS = ADDRESS;
+							       this.AGE = AGE;
+							       this.SINGLE = SINGLE;
+							    }
+
+							    var myObj = new employee("Sean Malto", "California, USA", 32, false);
+							    console.log(myObj);
+
+							    document.writeln("<b> OUTPUT : </b>", "<br>", "employee { NAME: Sean Malto, ADDRESS: California, USA, AGE: 32, SINGLE: false }");
+							</script>
+						</li>
+
+						<div class = "UL-CODE w3-section w3-half">
+							<ul class = "w3-ul w3-white">
+								<li class = "LIST-CODE w3-padding-32"> C O D E
+									<br> <br>
+								</li>
+
+								<li class = "CODE w3-padding-8">
+									&lt script type = "text / javascript" &gt
+									<br>
+									    <i> function </i> employee ( NAME, ADDRESS, AGE, SINGLE ) {
+									    <br>
+									       <i> this </i>.NAME = NAME ;
+									       <br>
+									       <i> this </i>.ADDRESS = ADDRESS ;
+									       <br>
+									       <i> this </i>.AGE = AGE ;
+									       <br>
+									       <i> this </i>.SINGLE = SINGLE ;
+									       <br>
+									    }
+									    <br> <br>
+									    <i> var </i> myObj = new employee("Sean Malto", "California, USA", 32, <i> false </i>) ;
+									    <br>
+									&lt / script &gt
+									<br>
+								</li>
+							</ul>
+						</div>
+
+						<li class = "CIRCLE-BG w3-padding-24">
+							<img src = "../webtek/images/circle.png" width = "60" height = "60" alt = "circle">
+						</li>
+					</ul>
+				</div>
+
+
+				<br> <br>
+				<a href = "#top" class = "BUTTON w3-button">
+					<i class = "fa fa-arrow-up w3-margin-right"></i> To the top
+				</a>
+
+
+				<br> <br> <br>
+				<!-- 3rd EXAMPLE -->
+				<div class = "w3-section" id = "var">
+					<ul class = "w3-ul w3-white w3-hover-shadow">
+						<li class = "w3-black w3-xlarge w3-padding-32"> var
+							<span class = "w3-opacity w3-large"><br> operator <br></span>
+						</li>
+
+						<li class = "w3-padding-8">
+							<p><b class = "OUTPUT"> OUTPUT : function </b></p>
+							<p id = "functionVar"></p>
+
+							<p><b class = "OUTPUT"> OUTPUT : global </b></p>
+							<p id = "globalVar"></p>
+
+							<script>
+								myFunction();
+
+								function myFunction() {
+								  var carModel = "FORD Ranger 2019";
+								  document.getElementById("functionVar").innerHTML = typeof carModel + " " + carModel;
+								}
+
+								document.getElementById("globalVar").innerHTML = typeof carModel;
+							</script>
+						</li>
+
+						<li class = "w3-padding-8">
+							<p><b class = "OUTPUT"> OUTPUT : </b></p>
+							<p> What course will you be taking under <b> SAMCIS Department </b>? <br> And <b> ARE YOU SURE </b>?</p>
+
+							<select id = "courses" onchange = "myFunc()">
+								<option value = "BS Acct"> Accountancy
+								<option value = "BS BusAd" id = "busado"> Business Administration
+								<option value = "BS CS"> Computer Science
+								<option value = "BS Entrep"> Entrepreneurship with specialization in Business Analytics
+								<option value = "BS FinMan"> Financial Management
+								<option value = "BS HM"> Hospitality Management
+								<option value = "BS IT"> Information Technology
+								<option value = "BLIS"> Library & Information Science
+								<option value = "BS Math"> Mathematics
+								<option value = "BS TM"> Tourism Management
+							</select>
+
+							<p><b> -- SELECTED COURSE -- </b></p>
+
+							<p id = "output"></p>
+
+							<script>
+								function myFunc() {
+								  var urCourse = document.getElementById("courses").value;
+
+								  document.getElementById("output").innerHTML = "> <b><i>" + urCourse + "</i></b> <";
+								}
+							</script>
+						</li>
+
+						<div class = "UL-CODE w3-section w3-half">
+							<ul class = "w3-ul w3-white">
+								<li class = "LIST-CODE w3-padding-32"> C O D E
+									<br> <br>
+								</li>
+
+								<li class = "CODE w3-padding-8">
+									&lt script &gt
+									<br>
+										myFunction() ;
+										<br> <br>
+
+										<i> function </i> myFunction() {
+										<br>
+										  <i> var </i> carModel = "Volvo" ;
+										  <br>
+										  <i> document </i>.getElementById("functionVar").innerHTML = typeof carModel + " " + carModel ;
+										  <br>
+										}
+										<br> <br>
+										
+										<i> document </i>.getElementById("globalVar").innerHTML = typeof carModel ;
+									    <br>
+									&lt / script &gt
+									<br>
+
+									-------------------------------------------------------------------------------------------------------------------
+									<br>
+
+									&lt script &gt
+									<br>
+										<i> function </i> myFunc() {
+										<br>
+										  <i> var </i> urCourse = <i> document </i>.getElementById("courses").value;
+										  <br> <br>
+
+										  <i> document </i>.getElementById("output").innerHTML = "> <b><i>" + urCourse + "</i></b> <" ;
+										  <br>
+										}
+										<br>
+									&lt / script &gt
+								</li>
+							</ul>
+						</div>
+
+						<li class = "CIRCLE-BG w3-padding-24">
+							<img src = "../webtek/images/circle.png" width = "60" height = "60" alt = "circle">
+						</li>
+					</ul>
+				</div>
+
+
+				<br> <br>
+				<a href = "#top" class = "BUTTON w3-button">
+					<i class = "fa fa-arrow-up w3-margin-right"></i> To the top
+				</a>
+
+
+				<br> <br> <br>
+				<!-- 4th EXAMPLE -->
+				<div class = "w3-section" id = "const">
+					<ul class = "w3-ul w3-white w3-hover-shadow">
+						<li class = "w3-black w3-xlarge w3-padding-32"> const
+							<span class = "w3-opacity w3-large"><br> operator <br></span>
+						</li>
+
+						<li class = "w3-padding-8">
+							<p><b class = "OUTPUT"> OUTPUT : </b></p>
+							<p id = "constObj"></p>
+
+							<script>
+								const car = { type:"Sports Car", model:"2014", color:"red / black" };
+
+								car.color = "matte";
+								car.owner = "Franz";
+								car.name = "Veneno Roadster";
+								car.brand = "Humberghini";
+
+								document.getElementById("constObj").innerHTML = "<b> Owner : </b> " + car.owner +
+								"<br> <b> Car Name : </b>" + car.name +
+								"<br> <b> Color : </b>" + car.color +
+								"<br> <b> Brand : </b>" + car.brand +
+								"<br> <b> Model : </b>" + car.model +
+								"<br> <b> Type : </b>" + car.type;
+							</script>
+						</li>
+
+						<li class = "w3-padding-8">
+							<p><b class = "OUTPUT"> OUTPUT : </b></p>
+							<p id = "declareArr"></p>
+
+							<script>
+								// Create an Array:
+								const former = ["3rd Dan Black Belt", " Skateboarder", " OJT Trainee"];
+
+								// Change an element:
+								former[0] = "MMA Instructor";
+
+								// Add an element:
+								former.push(" Cancer Patient");
+
+								document.getElementById("declareArr").innerHTML = "<b> BEFORE : </b> 3rd Dan Black Belt, Skateboarder, OJT Trainee <br>" +
+								"<b> AFTER ( pushing & changing some elements ) : </b>" + former;
+							</script>
+						</li>
+
+						<div class = "UL-CODE w3-section w3-half">
+							<ul class = "w3-ul w3-white">
+								<li class = "LIST-CODE w3-padding-32"> C O D E
+									<br> <br>
+								</li>
+
+								<li class = "CODE w3-padding-8">
+									&lt script &gt
+									<br>
+									    // creates an object
+									    <br>
+										<i> const </i> car = { type : "Sports Car", model : "2014", color : "red / black" } ;
+										<br> <br>
+
+										// changes a property
+										<br>
+										car.color = "matte" ;
+										<br> <br>
+
+										// adds multiple properties
+										<br>
+										car.owner = "Franz" ;
+										<br>
+										car.name = "Veneno Roadster" ;
+									    <br>
+									    car.brand = "Humberghini" ;
+									    <br>
+									&lt / script &gt
+									<br>
+
+									-------------------------------------------------------------------------------------------------------------------
+									<br>
+
+									&lt script &gt
+									<br>
+										// creates an Array
+										<br>
+										<i> const </i> former = [ "3rd Dan Black Belt", " Skateboarder", " OJT Trainee" ] ;
+										<br> <br>
+
+										// changes an element
+										<br>
+										former[0] = "MMA Instructor" ;
+										<br> <br>
+
+										// adds an element
+										<br>
+										former.push(" Cancer Patient") ;
+										<br>
+									&lt / script &gt
+								</li>
+							</ul>
+						</div>
+
+						<li class = "CIRCLE-BG w3-padding-24">
+							<img src = "../webtek/images/circle.png" width = "60" height = "60" alt = "circle">
+						</li>
+					</ul>
+				</div>
+
+
+				<br> <br>
+				<a href = "#top" class = "BUTTON w3-button">
+					<i class = "fa fa-arrow-up w3-margin-right"></i> To the top
+				</a>
+
+
+				<br> <br> <br>
+				<!-- 5th EXAMPLE -->
+				<div class = "w3-section" id = "let">
+					<ul class = "w3-ul w3-white w3-hover-shadow">
+						<li class = "w3-black w3-xlarge w3-padding-32"> let
+							<span class = "w3-opacity w3-large"><br> operator <br></span>
+						</li>
+
+						<li class = "w3-padding-8">
+							<p><b class = "OUTPUT"> OUTPUT : global </b></p>
+							<p id = "globalLet"></p>
+
+							<script>
+							    let me = 'go';
+							    var ano = 'daw';
+
+							    console.log(window.me);
+							    console.log(window.ano);
+
+							    document.getElementById("globalLet").innerHTML = "console.log(window.me); // undefined <br> console.log(window.ano); // able";
+							</script>
+						</li>
+
+						<li class = "w3-padding-8">
+							<p><b class = "OUTPUT"> OUTPUT : loop </b></p>
+							<p id = "loopLet"></p>
+
+							<script>
+								for ( let i = 0 ; i < 5 ; i++ ) {
+									let i = 8;
+									document.getElementById("loopLet").innerHTML = i;
+								}
+							</script>
+						</li>
+
+						<li class = "w3-padding-8">
+							<p><b class = "OUTPUT"> OUTPUT : redeclare & block </b></p>
+							<p id = "redeclare"></p>
+
+							<script>
+								var  x = 17;
+								{  
+								  let x = 4;
+								}
+
+								document.getElementById("redeclare").innerHTML = x;
+							</script>
+						</li>
+
+						<li class = "w3-padding-8">
+							<button onclick = "myFunction()"> RUN </button>
+
+							<script>
+								function myFunction() {
+									'use strict';
+
+								    let name = prompt("What is your name?", "");
+								    alert("Hi, " + name + "!");
+
+								    let auth = confirm("Are you really, " + name + "?");
+								    alert(auth);
+								}
+							</script>
+						</li>
+
+						<div class = "UL-CODE w3-section w3-half">
+							<ul class = "w3-ul w3-white">
+								<li class = "LIST-CODE w3-padding-32"> C O D E
+									<br> <br>
+								</li>
+
+								<li class = "CODE w3-padding-8">
+									&lt script &gt
+									<br>
+									    <i> let </i> me = 'go' ;
+									    <br>
+									    <i> var </i> ano = 'daw' ;
+									    <br> <br>
+
+									    <i> console.log </i>(window.me) ;
+									    <br>
+									    <i> console.log </i>(window.ano) ;
+									    <br>
+									&lt / script &gt
+									<br>
+
+									------------------------------------------------------
+									<br>
+
+									&lt script &gt
+									<br>
+										for ( <i> let </i> i = 0 ; i < 5 ; i++ ) {
+										<br>
+											<i> let </i> i = 8 ;
+											<br>
+										}
+										<br>
+									&lt /script &gt
+									<br>
+
+									------------------------------------------------------
+									<br>
+
+									&lt script &gt
+									<br>
+										<i> var </i>  x = 17 ;
+										<br>
+										// Here x is 17
+										<br>
+										{
+										<br>  
+										  <i> let </i> x = 4 ;
+										  <br>
+										  // Here x is 4
+										  <br>
+										}
+										<br>
+										// Here x is 17
+										<br>
+									&lt / script &gt
+									<br>
+
+									------------------------------------------------------
+									<br>
+
+									&lt  script &gt
+									<br>
+										<i> function </i> myFunction() {
+										<br>
+											'use strict' ;
+											<br> <br>
+
+										    <i> let </i> name = prompt( "What is your name?", "" ) ;
+										    <br>
+										    alert( "Hi, " + name + "!" ) ;
+										    <br> <br>
+
+										    <i> let </i> auth = confirm( "Are you really, " + name + "?" ) ;
+										    <br>
+										    alert( auth ) ;
+										    <br>
+										}
+										<br>
+									&lt / script &gt
+								</li>
+							</ul>
+						</div>
+
+						<li class = "CIRCLE-BG w3-padding-24">
+							<img src = "../webtek/images/circle.png" width = "60" height = "60" alt = "circle">
+						</li>
+					</ul>
+				</div>
+
+
+				<br> <br>
+				<a href = "#top" class = "BUTTON w3-button">
+					<i class = "fa fa-arrow-up w3-margin-right"></i> To the top
+				</a>
+
+
+				<br> <br> <br>
+				<!-- BONUS -->
+				<div class = "w3-section">
+					<ul class = "w3-ul w3-white w3-hover-shadow">
+						<li class = "LIST-CODE w3-xlarge w3-padding-32" id = "bonus"> B O N U S . E X A M P L E </li>
+
+						<li class = "w3-padding-16">
+							<h3> What Else Can JavaScript Do? </h3>
+							<p> JavaScript can change HTML attribute values. </p>
+							<p> In this case JavaScript changes the value of the src (source) attribute of an imAGE. </p>
+
+							<button onclick = "document.getElementById('myImAGE').src = 'pic_bulbon.gif'" class = "button button1 w3-opacity w3-green w3-hover-opacity-off"> Turn ON the light
+							</button>
+
+							<img id = "myImAGE" src = "pic_bulboff.gif" style = "width:100px">
+
+							<button onclick = "document.getElementById('myImAGE').src = 'pic_bulboff.gif'" class = "button button1 w3-opacity w3-red w3-hover-opacity-off"> Turn OFF the light
+							</button>
+						</li>
+
+						<li class = "CIRCLE-BG w3-padding-24">
+							<img src = "../webtek/images/icons/b127.ico" width = "70" height = "60" alt = "basics">
+						</li>
+					</ul>
+				</div>
+
+
+				<br> <br> <br>
+				<img src = "../webtek/images/icons/sabog.ico" width = "150" height = "140" alt = "rookie">
+
+				<br> <br>
+				<span class = "MOVE-ON w3-opacity"><b> NO MORE, PLEASE. </b></span>
+			</div>
+		</div>
+
+		<!-- FOOTER -->
+		<footer class = "FOOTER w3-padding-64">
+			<br>
+			<a href = "#top" class = "BUTTON w3-button">
+				<i class = "fa fa-arrow-up w3-margin-right"></i> TO THE TOP </a>
+
+			<br> <br>
+			<p> Team BEE | All Rights Reserved ©️ 2019 </p>
+		</footer>
+	</body>
+</html>
