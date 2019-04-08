@@ -1,3 +1,6 @@
+/*when adding colors make sure it is blue, yellow or green only https://www.kaplanco.com/ii/using-color-to-enhance-learning*/
+
+
 #background{
     
 	width: 100%;
@@ -29,42 +32,68 @@ font-size: 150%;
 }
 	#menu li a, #menu li span
 	{
-		text-decoration: none;
 		text-transform: uppercase;
+		text-decoration: none;
+		color: rgba(0,0,0,.4);
 		font-weight: 600;
 		font-size: 1em;
-		color: rgba(0,0,0,.4);
 	}
 #menu a:hover{
 	color: #228B22;
 }
-	
+/* Redesign this to empasize each topic to tackle
+`- Add some font style to it and put some background to easily notice.
+
+*/
+#topics h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+	background-color: blue;
+	color: white;
+}
+
+/*Make this at the bottom of each topic color it yellow to be easily noticed. Make it clickable*/
+.Note{
+	background-color: yellow;
+	border: 1px solid black;
+}
+
+.Note img{
+	width:40px;
+}
+.emphasis {
+    color: #1665CB;
+	font-size: 50px;
+	font-weight: bold;
+}
+
 /* This is for the side navigator*/
 .sidenav {
   height: 100%;
-  width: 160px;
+  width: 165px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: black;
   overflow-x: hidden;
   padding-top: 20px;
 }
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 22px;
-  color: #818181;
+  font-size: 20px;
+  color: #f1f1f1;
   display: block;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #1665CB;
 }
 /*Body*/
 #content {
-  margin-left: 160px; /* Same as the width of the sidenav */
+  margin-left: 165px; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
   padding-top: 130px;
   overflow-x: hidden;
@@ -96,7 +125,7 @@ font-size: 150%;
 .image {
   opacity: 1;
   display: block;
-  width: 100%;
+  width: 30%;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
@@ -152,7 +181,27 @@ font-size: 150%;
   padding: 16px 32px;
 }
 
+/*Design for the table(for examples)*/
+table, th, td {
+  border: 1px solid black;
+  text-align: center;
+}
+ table{
+	 width: 100%;
+ }
+
+
 /*Footer Section*/
 footer{
 	text-align: center;
 }
+
+
+
+
+
+
+
+
+
+

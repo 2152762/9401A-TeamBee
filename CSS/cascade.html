@@ -4,6 +4,7 @@
 		<title>CSS</title>
 		<link rel="icon" href="images/bumble.jpg">
 		<link rel ="stylesheet" type="text/css" href="style/CSSstyle.css"> 
+		
 	</head>
 	
 	<body>
@@ -19,10 +20,12 @@
 		
 		<div class="sidenav">
 			<a href="#what">What is CSS?</a>
-			<a href="#Advantages">Advantages of CSS</a>
+			<a href="#who">Who invented CSS?</a>
+			<a href="#why">Why use CSS?</a>
 			<a href="#Version">CSS Version History</a>
-			<a href="#Style">HTML Style Sheets</a>
+			<a href="#Application">CSS Application</a>
 			<a href="#Syntax">CSS Syntax</a>
+			<a href="#comments">CSS Comments</a>
 			<a href="#Selector">CSS Selectors</a>
 			<a href="#Precedence">CSS Rule Precedence</a>
 			<a href="#Statement">CSS Statements</a>
@@ -34,7 +37,7 @@
 
 		<section id="content">
 		<div id = "background">
-		<img src="images/background.jpeg" alt="frontimage" id="Fimg">
+		<img src="images/background.jpeg" alt="frontimage">
 		</div>
 			<div class="CSS">
 				<main>
@@ -42,26 +45,41 @@
                 	<div id ="topics">
                        <a name="what"><h2>What is CSS?</h2> </a>
 					</div>
+					
+					<p><span class="emphasis">C</span>ascading <span class="emphasis">S</span>tyle <span class="emphasis">S</span>heet or popularly known as CSS.</p>
                     <ul>
-                        <li>
-                        	CSS is a design language used to describe the presentation (e.g. layout, formatting, fonts, colors, etc.)of webpages (e.g., <em>HTML, XML </em> etc.)
-                        <li>
-							It is used to specify how websites are to be displayed.
-						<li> It is developed by Hakon Wium Lie and Bert Bos.
+						<ul>
+                        <li><em>Cascading</em> - refers to the ability to combine multiple CSS files to style a webpage.
+						<li><em>Style Sheet</em> - controls the design of the web documents.
+						</ul>
+						<br>
+                        <li> CSS is a design language which enables you to specify rules on how a document written in markup language.(e.g., <em>HTML, plain XML, XHTML </em> etc.) should appear.
+						<li> CSS controls the presentation layer of the webpages.
 					</ul>
+					
+					<div class="Note">
+					<img src = "images/note.png" alt="ImportantNote">Note:If you want to learn CSS, you should already have a knowledge about HTML.
+					</div>
+					<hr>
+					
+					
+					<div id ="topics">
+                       <a name="who"><h2>Who invented CSS?</h2> </a>
+					</div>
+					<p> Cascading Style Sheet were first proposed by <strong>Hakon Wium Lee,</strong> a Chief Technical Officer working at CERN with Tim Berners-Lee. <br> Hakon Lie released the first draft of "Cascading HTML Style Sheet" in 1994 at the same time Brent Bos was also building a browser that has style sheet that could be used by other markup languages(eg. HTML, VHTML, etc.).
+					</p>
 					<div class="picture">
 					<div class="picture1">
-						<a href="https://www.wiumlie.no/en" target="_blank"><img src="images/hakon.png" alt="Hakon" class="image" style="width:30%"></a>
-						
+						<img src="images/hakon.png" alt="Hakon" class="image"style="width:30% ;">
 					<div class="middle1">
-						<div class="text">Hakon Wium Lie</div>
+						<div class="text">Hakon Wium Lee</div>
 					</div>
 					</div>
 					
 					<div class="picture2">
-						<a href="https://www.w3.org/People/Bos/" target="_blank"><img src="images/BertBos.png" alt="Bert" class="image" style="width:30%"></a>
+						<img src="images/BertBos.png" alt="Bert" class="image">
 					<div class="middle2">
-						<div class="text1">Bert Bos</div>
+						<div class="text1">Brent Bos</div>
 					</div>
 					</div>
 					</div>
@@ -71,16 +89,17 @@
 					<br>
 					<br>
 					<br>
-<!--					<hr>-->
+					<hr>
 						
 					<div id ="topics">
-                       <a name="Advantages"><h2> Advantages of CSS</h2></a>
+                       <a name="why"><h2> Why use CSS?</h2></a>
 					</div>
 					<ul>
+						<li> CSS allows you to apply specific styles to specific HTML element.
+						<li> It separates the content of the document and the details of the style.
                         <li> It improves website presentation.
-						<li> Saves time.
-						<li> Avoids duplication and Easier to maintain.
-						<li> It separates the content of the document and the details of the style. 
+						<li> Saves you a lot of time in designing your website.
+						<li> Avoids duplication and Easier to maintain. 
 					</ul>
 					<hr>
 					
@@ -92,10 +111,23 @@
 						<li><strong>CSS Level 1 (CSS 1, W3C Recommendation, December 17, 1996). </strong>
 							<ul>
 							<li> The first official W3C Recommendation for CSS specification.
+								<ul>
+								<li>Font properties
+								<li>Text attributes
+								<li>Margin, Boarders, Padding and Positioning
+								<li>Unique identification and classification of attributes.
+								</ul>
 							</ul>
                         <li><strong>CSS Level 2 (CSS 2, W3C Recommendation, May 1998).</strong>
 							<ul>
 							<li> A simple visual formatting model for HTML tags.<br>
+							<ul>
+								<li>Z-index
+								<li>Media Types
+								<li>Bidirectional Text
+								<li>Positioning - Fixed, Absolute and Relative.
+								<li> Supports aural style sheets.
+								</ul>
 							</ul>
                         <li><strong>CSS Level 2.1 Revision 1 (CSS 2.1, W3C Recommendation, June 2011).</strong>
 						<ul>
@@ -104,48 +136,116 @@
                         <li><strong>CSS Level 3</strong>
 						<ul>
                         <li>Modular approach to CSS development(as opposed to the monolithic specification of CSS 2.1)
+						<ul>
+								<li>Selector level 3
+								<li>Media Queries
+								<li>NameSpaces
+								</ul>
 						</ul>
 						</ul>
+						
+						<div class="Note">
+						<img src = "images/note.png" alt="ImportantNote">Note: CSS Level 1 is already removed.
+						</div>
                         <hr>
 
 
                         <div id = "topics">
-                        <a name="Style"><h2> HTML Style Sheets </h2> </a>
+                        <a name="Application"><h2> CSS Application </h2> </a>
 						</div>
+						<p>There are three ways to apply CSS styles to a HTML document. They are:</p>
 						<ul>
-                        <li>Sources of styles for HTML documents
-                        <ul>
-                        	<li><strong>Author Styles</strong>
-                        	<br> &#9755;external (a.k.a <em>linked</em>) stylesheets (recommended)
+							<li><strong>Inline style</strong>
+								<ul>
+								<li> Directly applied to the HTML using the <i>style</i> attribute.
+								</ul>
+								<table>
+								<tr>
+								<th> Example:</th>
+								</tr>
+								
+								<tr>
+								<td><img src="images/InlineExample.png" alt="Inline"></td>
+								</tr>
+								</table>
+								<br>
+								
+							<li><strong>Embedded</strong> (a.k.a <em>Internal</em>) stylesheets 
+								<ul> 
+								<li> Specified within the <strong>head</strong> tags of HTML document. 
+								</ul>
+								
+								<table>
+								<tr>
+								<th> Example:</th>
+								<th> Result</th>
+								</tr>
+								
+								<tr>
+								<td><img src ="images/InternalCode.jpg" alt="Code"></td>
+								<td><img src ="images/InternalOutput.jpg" alt="Output"></td>
+								</tr>
+								</table>
+								<br>
+								
+								
+                        	<li><strong>External</strong> (a.k.a <em>linked</em>) stylesheets (recommended)
 								<ul>
 								&#9758;These stylesheet doesn't contain any html tags and it should be saved with the <em>.css</em> extension.<br>
-								&#9758;It can be applied to many pages
 								</ul>
-                        	&#9755;Embedded (a.k.a <em>internal</em>) stylesheets
-                        	<br> &#9755;Inline styles
-                        	<li><strong>User Styles</strong>
-                        	<br> &#9755;Some browsers provide (non-standard)alternatives through plugins extensions (e.g., <em>Stylish</em>)
-                        	<li><strong>User Agent Styles</strong>
-                        	<br> &#9755;Default styles from CSS 2.1. that browsers try to web pages.<br>
-                        </ul>
+								<table>
+								<tr>
+								<th>Example:</th>
+								<th>Source Code </th>
+								</tr>
+								
+								<tr>
+								<td><img src="images/External.png" alt="External"></td>
+								<td><img src="images/ExternalExample.png" alt="ExternalExample"></td>
+								</tr>
+								</table>
+								<br>
+								
 						</ul>
+						<div class="Note">
+						<img src = "images/note.png" alt="ImportantNote">Note: Use Inline Style only when a SINGLE element has a unique style to be applied.
+						</div>
                         <hr>
 					
 					<div id="topics">
 					<a name="Syntax"><h2> CSS Syntax</h2>
 					</div></a>
+					<p>In CSS the browser interprets the style rules and then applies it to the corresponding elements in your website.</p>
+					<p>A style rule has two parts: <strong>selector</strong> and <strong>declaration</strong>.</p>
 					<ul>
 					<li><strong>Selector</strong> - used to select the HTML element to style.
-					<li><strong>Declaration Block</strong> - contains one or more declaration that has CSS property and value.
-					<li><strong>Property</strong> - an attribute of HTML tag. HTML attributes are converted into CSS properties.
-					<li><strong>Value</strong> - assigned to properties. 
+					<li><strong>Declaration Block</strong> - contains one or more declaration that has a property and value which is separated by a colon(:).
+						<ul>
+						<li><strong>Property</strong> - an attribute of HTML tag to be changed. 
+						<li><strong>Value</strong> - assigned to properties. 
+						</ul>
 					</ul>
 					<img src="images/SYNTAX.jpg" alt="syntax">
-					<ul>
-					<li> <strong>CSS Comments</strong> - Comments are used to explain your code. A CSS comment begins with "<em>/*</em>" and ends with "<em>*/</em>".
-					</ul>
-					<img src="images/CssComment.jpg" alt="comment">
+					<div class="Note">
+					<img src = "images/note.png" alt="ImportantNote">A declaration block always ends with a semicolon(;), and a declaration groups are surrounded by curly braces({}).
+					</div>
+					<hr>
 					
+					<div id="topics">
+					<a name="comments"><h2> CSS Comments</h2>
+					</div></a>
+					<p>Comments are used to explain your code. A CSS comment starts with "<em>/*</em>" and ends with "<em>*/</em>".</p>
+					<table>
+								<tr>
+								<th> Single Line Comment</th>
+								<th> Multiple Line Comment</th>
+								</tr>
+								
+								<tr>
+								<td><img src="images/CssComment.jpg" alt="Single"></td>
+								<td><img src="images/CSScomment - Copy.jpg" alt="Multiple"></td>
+								</tr>
+								</table>
 					<hr>
 
  					<div id ="topics">
@@ -153,11 +253,37 @@
 					</div>
 						<ul>
  						<li><strong>Selector</strong> - is an HTML tag wherein it is used in CSS rule to determine which style will be applied.
- 						<li> <strong>Selector Syntax</strong> - chain of one or more sequences of simple selectors separated by combinators, with one pseudo-element, possibly appended to the last sequence and always start with type selector  and universal selector.
-						<li> <strong>Selector Group</strong> - comma-separated list of selectors representing the union of all elements selected by each of the selectors in the list.
- 						<li> <strong>SIMPLE SELECTOR</strong>
- 						<ul>
- 							<li> <strong>Type selectors</strong>
+						<ul>
+						<li> <strong>Type Selectors</strong> or Element Selector - The most easy to understand selector. . It will select all matched elements in the document.
+						
+						<table>
+								<tr>
+								<th> Syntax</th>
+								<th> Type Selector</th>
+								</tr>
+								Example
+								<tr>
+								<td><img src="images/TypeSelectorSyntax.jpg" alt="Syntax"></td>
+								<td><img src="images/TypeSelectorExample.jpg" alt="Example"></td>
+								</tr>
+						</table>
+						
+						
+						<li> <strong>Grouped Selector </strong> - Elements with the same style are combined into one declaration block wherein selectors are separated with a comma.
+						
+						<table>
+								<tr>
+								<th> Example</th>
+								<th> Grouped Selector</th>
+								</tr>
+								
+								<tr>
+								<td><img src="images/GroupExample.jpg" alt="Single"></td>
+								<td><img src="images/GroupOutput.jpg" alt="Multiple"></td>
+								</tr>
+						</table>
+						
+ 						
  							<li> <strong>ID selectors</strong>
  							<li> <strong>Class selectors</strong>
 							<li> <strong>Universal selectors</strong>
@@ -307,18 +433,18 @@
                         <a name="Preprocessors"><h2>CSS Preprocessors, Frameworks and Polyfills</h2> </div></a>
                         <li><strong>Preprocessors</strong>
                         	<ul>
-                        	<li>generates CSS using a custom language syntax that typically includes features that don't exist
-		  					in pure CSS </ul>
+								<li>
+							</ul>
+							
 		  				<li><a name="Frameworks"><strong>CSS Frameworks</strong></a>
 		  					<ul>
 		  						<li>provides functionality without having to write CSS.
 		  						<li>Set of codes already provided by other users which other developers can use in developing their website.
-		  						<li>provides predefined CSS design functionality that can be reused, extended, or customized (e.g., bootstrap, materialize, etc.)
 		  					</ul>
+							
 		  				<li><a name="Polyfills"><strong>Polyfills</strong></a>
 		  					<ul>
 		  						<li>allows users/developers to make use of the features of the browsers.
-		  						<li>provides features that developers expect browsers to provide natively.
 		  						<br>&emsp;&emsp;&emsp;&emsp;&#9657; E.g., modernizr, selectivizr, etc.
 		  					</ul>
 							</ul>
@@ -328,10 +454,10 @@
 		
 		<footer>
 			<p>
-			<a href="https://github.com/" target="_blank"> <img src="images/git.png" width="35" height="35" alt="git"></a>
-			<a href="https://www.linkedin.com/" target="_blank"> <img src="images/linked.png" width="35" height="35" alt="linked"></a>
-			<a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"> <img src="images/gmail.png" width="35" height="35" alt="gmail"></a>
-			<a href="https://www.facebook.com/" target="_blank"> <img src="images/facebook.png" width="35" height="35" alt="facebook"></a><br>
+			<a href="https://github.com/"> <img src="images/git.png" width="35" height="35" alt="git"></a>
+			<a href="https://www.linkedin.com/"> <img src="images/linked.png" width="35" height="35" alt="linked"></a>
+			<a href="https://mail.google.com/mail/u/0/#inbox"> <img src="images/gmail.png" width="35" height="35" alt="gmail"></a>
+			<a href="https://www.facebook.com/"> <img src="images/facebook.png" width="35" height="35" alt="facebook"></a><br>
 			&copy; Copyright 2019. TeamBee. All Rights Reserved.</p>
 		</footer>
 		
