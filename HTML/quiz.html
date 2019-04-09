@@ -1,0 +1,164 @@
+<style type="text/css">
+body{
+	margin: auto;
+	background: #333;
+}
+
+.container{
+	margin: 20px auto;
+	background: #455A64;
+	width: 40%;
+	border-radius: 1%;
+}
+
+form{
+	padding: 50px 60px;
+	overflow: auto;
+	height: 600px;
+}
+</style>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Quiz</title>
+</head>
+<body>
+<div class="container">	
+	<form name="quiz">
+		<h2>HTML Quiz</h2>
+		<h4>1. HTML stands for?</h4>
+		<input type="radio" name="question1" value="a">Hypertext Markup Language
+		<br>
+		<input type="radio" name="question1" value="b">Hyperlink Markup Language
+		<br>
+		<input type="radio" name="question1" value="c">Highest Markup Language
+		<br>
+
+		<h4>2. Defines an ordered list</h4>
+		<input type="radio" name="question2" value="a">&lt;li&gt;
+		<br>
+		<input type="radio" name="question2" value="b">&lt;ol&gt;
+		<br>
+		<input type="radio" name="question2" value="c">&lt;ul&gt;
+		<br>
+
+		<h4>3. Defines a document to be HTML5</h4>
+		<input type="radio" name="question3" value="a">&lt;DOCTYPE HTML&gt;
+		<br>
+		<input type="radio" name="question3" value="b">&lt;!DOCTYPE html&gt;
+		<br>
+		<input type="radio" name="question3" value="c">&lt;DOCTYPE&gt;
+		<br>
+
+		<h4>4. What is the root element of an HTML page?</h4>
+		<input type="radio" name="question4" value="a">&lt;title&gt;
+		<br>
+		<input type="radio" name="question4" value="b">&lt;footer&gt;
+		<br>
+		<input type="radio" name="question4" value="c">&lt;html&gt;
+		<br>
+
+		<h4>5. What is the largest heading?</h4>
+		<input type="radio" name="question5" value="a">&lt;heading&gt;
+		<br>
+		<input type="radio" name="question5" value="b">&lt;header&gt;
+		<br>
+		<input type="radio" name="question5" value="c">&lt;h1&gt;
+		<br>
+
+		<h4>6. Correct way of creating a link</h4>
+		<input type="radio" name="question6" value="a">&lt;a url=""&gt;This is a Link.&lt;/a&gt;
+		<br>
+		<input type="radio" name="question6" value="b">&lt;a href="url"&gt;This is a Link.&lt;/a&gt;
+		<br>
+		<input type="radio" name="question6" value="c">&lt;a value=""&gt;This is a Link.&lt;/a&gt;
+		<br>
+
+		<h4>7. There are how many type of list?</h4>
+		<input type="radio" name="question7" value="a">1
+		<br>
+		<input type="radio" name="question7" value="b">2
+		<br>
+		<input type="radio" name="question7" value="c">3
+		<br>
+
+		<h4>8. A list of options where in a user can only select one option.</h4>
+		<input type="radio" name="question8" value="a">check box
+		<br>
+		<input type="radio" name="question8" value="b">radio button
+		<br>
+		<input type="radio" name="question8" value="c">submit button
+		<br>
+
+		<h4>9. A list of options where in a user can select one or more options.</h4>
+		<input type="radio" name="question9" value="a">check box
+		<br>
+		<input type="radio" name="question9" value="b">radio button
+		<br>
+		<input type="radio" name="question9" value="c">submit button
+		<br>
+
+		<h4>10. Contains a table data.</h4>
+		<input type="radio" name="question10" value="a">&lt;table&gt;
+		<br>
+		<input type="radio" name="question10" value="b">&lt;tr&gt;
+		<br>
+		<input type="radio" name="question10" value="c">&lt;td&gt;
+		<br>
+
+		<p id="score"></p>
+	<input type="button" value="submit" onclick="correctTotal()">
+	</form>	
+</div>
+
+<script>
+	function correctTotal(){
+		var question1=document.quiz.question1.value;
+		var question2=document.quiz.question2.value;
+		var question3=document.quiz.question3.value;
+		var question4=document.quiz.question4.value;
+		var question5=document.quiz.question5.value;
+		var question6=document.quiz.question6.value;
+		var question7=document.quiz.question7.value;
+		var question8=document.quiz.question8.value;
+		var question9=document.quiz.question9.value;
+		var question10=document.quiz.question10.value;
+		var count=0;
+
+		if (question1=="a") {
+			count++;
+		}
+		if (question2=="b") {
+			count++;
+		}
+		if (question3=="b") {
+			count++;
+		}
+		if (question4=="c") {
+			count++;
+		}
+		if (question5=="c") {
+			count++;
+		}
+		if (question6=="b") {
+			count++;
+		}
+		if (question7=="c") {
+			count++;
+		}
+		if (question8=="b") {
+			count++;
+		}
+		if (question9=="a") {
+			count++;
+		}
+		if (question10=="c") {
+			count++;
+		}
+		document.getElementById("score").innerHTML = "Your score is:"+count+" /10";
+		
+	}
+
+</script>
+</body>
+</html>
