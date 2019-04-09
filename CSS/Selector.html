@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang ="en">
+	<head>
+		<title>CSS</title>
+		<link rel="icon" href="images/bumble.jpg">
+		<link rel ="stylesheet" type="text/css" href="style/CSSstyle.css"> 	
+	</head>
+	
+	<body>
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="hyper.html">HTML</a></li> 
+				<li><a href="CSSHomepage.html">CSS</a></li>
+				<li><a href="javascript.html">Javascript</a></li> 
+			</ul>
+		</div>
+		
+		<div class="sidenav"> 
+			<a href="what.html">What is CSS?</a>
+			<a href="who.html">Who invented CSS?</a>
+			<a href="why.html">Why use CSS?</a>
+			<a href="Version.html">CSS Version History</a>
+			<a href="Application.html">CSS Application</a>
+			<a href="Syntax.html">CSS Syntax</a>
+			<a href="comments.html">CSS Comments</a>
+			<a href="Selector.html">CSS Selectors</a>
+			<a href="Precedence.html">CSS Rule Precedence</a>
+			<a href="Statement.html">CSS Statements</a>
+			<a href="Properties.html">CSS Properties</a>
+			<a href="Styling.html">CSS Styling</a> 
+			
+			
+		</div>
+		
+		<section id="content">
+		<div class="CSS">
+                <div id="wrapper">
+				<div id ="topics">
+ 						<h2> CSS Selectors </h2>
+					</div>
+						<ul>
+ 						<li><strong>Selector</strong> - is an HTML tag wherein it is used in CSS rule to determine which style will be applied.
+						<ul>
+						<li> <strong>Type Selectors</strong> or Element Selector - The most easy to understand selector. . It will select all matched elements in the document.
+						<br>
+						<table>
+								<tr>
+								<th> HTML code </th>
+								</tr>
+								<tr>
+								<td><img src="images/TypeCss.jpg" alt="HTMLcode"></td> 
+						</table>
+								<table>
+								<tr>
+								<th> CSS Code </th>
+								</tr>
+								
+								<br>
+								<tr>
+								<td><img src="images/Syntax.jpg" alt="CSScode"></td>
+								</tr>
+								</table>
+								
+								<br>
+								<table>
+								<th> Result</th>
+								</tr>
+								<tr>
+								<td><img src="images/TypeSelectorOutput.jpg" alt="Example"></td>
+								</tr>
+						</table>
+						
+						<br>
+						<br>
+						<li> <strong>Grouped Selector </strong> - Elements with the same style are combined into one declaration block wherein selectors are separated with a comma.
+						
+						<table>
+								<tr>
+								<th> Example</th>
+								<th> Grouped Selector</th>
+								</tr>
+								
+								<tr>
+								<td><img src="images/GroupExample.jpg" alt="Single"></td>
+								<td><img src="images/GroupOutput.jpg" alt="Multiple"></td>
+								</tr>
+						</table>
+						
+						<br>
+						<br>
+ 						
+ 							<li> <strong>ID selectors</strong> - An ID Selector styles an element based on the value of its designated ID attribute. It is preceded by a number sign(#) and it can only identify one element.
+							
+						<br>
+						<br>
+						
+ 							<li> <strong>Class selectors</strong> -A Class Selector is preceded by a period mark(.) and it can be used to identify two or more elements.
+							
+						<br>
+						<br>
+							<li> <strong>Universal selectors</strong> - A universal selector has a asterisk(*) that will match any element in the document.
+							
+						<br>
+						<br>
+							<li> <strong>Attribute selectors</strong> - used to style elements based on values or attributes.
+
+							<ul>
+ 							<li><em>[attribute=value]</em> - Selects all elements with target="_blank"
+ 							<li><em>[attribute~=value]</em> - Selects all elements with a title attribute containing the value you put inside the attribute.
+ 							<li><em>[attribute !=value]</em> - Select elements that either don't have the specified attribute.
+							</ul>
+							
+							<div class="Note">
+					<img src = "images/note.png" alt="ImportantNote">Attribute Selectors is only supported in the latest versions of browsers.
+					</div>
+							
+							<br>
+						<br>
+							<li> <strong>Pseudo-classes</strong> - a keyword added to the end of a selector, which is used to specify the element you want to style.
+							<ul>
+							
+							
+							<li><strong>Dynamic pseudo-classes </strong>( e.g., <em>:link</em> , <em>:visited</em> )
+							<li><strong>User-action pseudo-classes </strong>( e.g., <em>:hover</em> , <em>:active</em> , <em>:focus</em> )
+							<li><strong>Target pseudo-classes</strong> ( e.g., <em>:target</em> )
+							<li><strong>Language pseudo-classes </strong>( e.g., <em>:lang</em> )
+							<li><strong>UI element states pseudo-classes</strong> ( e.g., <em>:enabled</em> , <em>:disabled</em> , <em>:checked</em> , <em>:indeterminate</em> )
+							<li><strong>Structural pseudo-classes </strong>( e.g., <em>:root</em> , <em>:first-child</em> , <em>:last-child</em> , <em>:only-child</em> , <em>:nth-child()</em>, <em>:nth-last-child()</em> , <em>:first-of-type</em> , <em>:last-of-type</em> , <em>:only-of-type</em> , <em>:empty</em> , <em>:nth-of-type()</em> , <em>:nth-last-of-type()</em> )
+							<li><strong>Pseudo-elements </strong>( e.g., <em>:first-letter</em> , <em>::first-letter</em> , <em>:before</em> , <em>::before</em> )
+							</ul>
+							
+						<br>
+						<br>
+							
+							<li> <strong>Combinators</strong> - relationship between selectors.
+							<ul>
+							<li><strong>Descendant Selectors </strong> - It is made up of two or more selectors with whitespace between two selectors.
+								<ul>
+									<li>whitespace
+									<li>space
+									<li>tab
+									<li>line feed
+									<li>carriage
+									<li>return
+									<li>form feed
+								</ul>
+								<div class="Note">
+					<img src = "images/note.png" alt="ImportantNote">The white space is a combinator that specifies the ancestor of some element.
+					</div>
+						<br>
+						<br>
+							<li><strong>Child Selectors (>) </strong> - Like descendant selectors it is made up of two or more selectors but separated by ">".
+							<br>
+						<br>
+						
+						
+							<li><strong>Sibling Selectors </strong>
+								<ul>
+									<li><strong> Adjacent Sibling Selector </strong> - separates two selectors with plus sign(+).
+
+									<li><strong> General Sibling Selector </strong> - separates two selectors tilde symbol(~).
+								</ul>
+							</ul>
+ 						</ul>
+						</ul>
+
+			</div>
+		</div>
+
+	</section>
+	
+		<footer>
+			<p>
+			<a href="https://github.com/"> <img src="images/git.png" width="35" height="35" alt="git"></a>
+			<a href="https://www.linkedin.com/"> <img src="images/linked.png" width="35" height="35" alt="linked"></a>
+			<a href="https://mail.google.com/mail/u/0/#inbox"> <img src="images/gmail.png" width="35" height="35" alt="gmail"></a>
+			<a href="https://www.facebook.com/"> <img src="images/facebook.png" width="35" height="35" alt="facebook"></a><br>
+			&copy; Copyright 2019. TeamBee. All Rights Reserved.</p>
+		</footer>
+		
+	</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang ="en">
+	<head>
+		<title>CSS</title>
+
+		<link rel="icon" href="images/bumble.jpg">
+		<link rel ="stylesheet" type="text/css" href="style/CSSstyle.css"> 	
+	</head>
+	
+	<body>
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="hyper.html">HTML</a></li> 
+				<li><a href="CSSHomepage.html">CSS</a></li>
+				<li><a href="javascript.html">Javascript</a></li> 
+			</ul>
+		</div>
+		
+		<div class="sidenav"> 
+			<a href="what.html">What is CSS?</a>
+			<a href="who.html">Who invented CSS?</a>
+			<a href="why.html">Why use CSS?</a>
+			<a href="Version.html">CSS Version History</a>
+			<a href="Application.html">CSS Application</a>
+			<a href="Syntax.html">CSS Syntax</a>
+			<a href="comments.html">CSS Comments</a>
+			<a href="Selector.html">CSS Selectors</a>
+			<a href="Precedence.html">CSS Rule Precedence</a>
+			<a href="Statement.html">CSS Statements</a>
+			<a href="Properties.html">CSS Properties</a>
+			<a href="Styling.html">CSS Styling</a> 
+			
+			
+		</div>
+		
+		<section id="content">
+		<div class="CSS">
+                <div id="wrapper">
+				<div id ="topics">
+                        <h2> CSS Rule Precedence </h2>
+						</div> 
+						<ul>
+                        <li> <strong>CSS Rule Precedence</strong> - From highest to lowest priority and an HTML element may be the subject of the selectors of multiple style rules.
+                        <br> &emsp;&emsp;&#9657; when such rules target different properties, their effects cascade (i.e., are combined )
+                        <br> &emsp;&emsp;&#9657; when the styles involve the same property, they conflict and must be resolved such that only one style is applied.
+                        <ul>
+                        	<li><strong> By origin and importance</strong>
+                        		<br> &emsp;&emsp;&#9657;user agent important declarations
+                        		<br> &emsp;&emsp;&#9657;user importance declarations
+                        		<br> &emsp;&emsp;&#9657;author important declarations
+                        		<br> &emsp;&emsp;&#9657;author normal declarations
+                        		<br> &emsp;&emsp;&#9657;user normal declarations
+                        		<br> &emsp;&emsp;&#9657;user agent normal declarations
+                        	<li><strong>By specificity</strong>- The higher the priority
+                        		<br> &emsp;&emsp;&#9657;Inline Style
+                        		<br> &emsp;&emsp;&#9657;Number of ID selectors
+                        		<br> &emsp;&emsp;&#9657;Number of class selectors, attribute selectors, pseudo-class
+                        		<br> &emsp;&emsp;&#9657;Number of type selectors & pseudo-elements
+                        	<li> <strong>By order</strong> - If it comes later, it goes first.
+                        </ul>
+						</ul>
+
+			</div>
+		</div>
+
+	</section>
+	
+		<footer>
+			<p>
+			<a href="https://github.com/"> <img src="images/git.png" width="35" height="35" alt="git"></a>
+			<a href="https://www.linkedin.com/"> <img src="images/linked.png" width="35" height="35" alt="linked"></a>
+			<a href="https://mail.google.com/mail/u/0/#inbox"> <img src="images/gmail.png" width="35" height="35" alt="gmail"></a>
+			<a href="https://www.facebook.com/"> <img src="images/facebook.png" width="35" height="35" alt="facebook"></a><br>
+			&copy; Copyright 2019. TeamBee. All Rights Reserved.</p>
+		</footer>
+		
+	</body>
+</html>
