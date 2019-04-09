@@ -42,21 +42,25 @@
 						</div> 
 						<ul>
                         <li> <strong>CSS Rule Precedence</strong> - From highest to lowest priority and an HTML element may be the subject of the selectors of multiple style rules.
-                        <br> &emsp;&emsp;&#9657; when such rules target different properties, their effects cascade (i.e., are combined )
-                        <br> &emsp;&emsp;&#9657; when the styles involve the same property, they conflict and must be resolved such that only one style is applied.
+						<br>
                         <ul>
                         	<li><strong> By origin and importance</strong>
-                        		<br> &emsp;&emsp;&#9657;user agent important declarations
-                        		<br> &emsp;&emsp;&#9657;user importance declarations
-                        		<br> &emsp;&emsp;&#9657;author important declarations
-                        		<br> &emsp;&emsp;&#9657;author normal declarations
-                        		<br> &emsp;&emsp;&#9657;user normal declarations
-                        		<br> &emsp;&emsp;&#9657;user agent normal declarations
+                        		<ul>
+									<li>user agent important declarations
+									<li>user importance declarations
+									<li>author important declarations
+									<li>author normal declarations
+									<li>user normal declarations
+									<li>user agent normal declarations
+									</ul>
+									<br>
                         	<li><strong>By specificity</strong>- The higher the priority
-                        		<br> &emsp;&emsp;&#9657;Inline Style
-                        		<br> &emsp;&emsp;&#9657;Number of ID selectors
-                        		<br> &emsp;&emsp;&#9657;Number of class selectors, attribute selectors, pseudo-class
-                        		<br> &emsp;&emsp;&#9657;Number of type selectors & pseudo-elements
+                        		<ul>
+									<li>Inline Style
+									<li>Number of ID selectors
+									<li>Number of class selectors, attribute selectors, pseudo-class
+									<li>Number of type selectors & pseudo-element</ul>
+									<br>
                         	<li> <strong>By order</strong> - If it comes later, it goes first.
                         </ul>
 						</ul>
