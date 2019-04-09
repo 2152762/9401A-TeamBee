@@ -1,0 +1,469 @@
+<style type="text/css">
+body{
+	margin: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.container{
+	margin: 0;
+	background: #F9F1F1;
+	width: 100%;
+	min-width: 640px;
+}
+
+header {
+	background: #455A64;
+	color: white;
+	padding: .5rem;
+	text-align: center;
+	font-size: 25px;
+}
+
+.topnav{
+	background: #DAA520;
+	overflow: hidden;
+}
+
+.topnav a{
+	float: left;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	padding: 14px 16px;
+	width: 100px;
+	color: white;
+}
+
+.dropdown{
+	display: inline-block;
+	position: sticky;
+	background: #333;
+	width: 100%;
+	position: sticky;
+	top: 0;
+}
+
+.button{
+	float: left; 
+	padding: 10px;
+}
+
+.dropbtn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+}
+
+.dropbtn a{
+	text-decoration: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/** DROP DOWN DESIGN */
+.dropdown-content a:hover {background-color: #ddd;}
+.basics:hover .dropdown-content {display: block;}
+.texts:hover .dropdown-content {display: block;}
+.tables:hover .dropdown-content {display: block;}
+.forms:hover .dropdown-content {display: block;}
+.basics:hover .dropbtn {background-color: #3e8e41;}
+.texts:hover .dropbtn {background-color: #3e8e41;}
+.tables:hover .dropbtn {background-color: #3e8e41;}
+.forms:hover .dropbtn {background-color: #3e8e41;}
+
+.quiz{
+	float: right;
+	padding: 20px;
+	line-height: 30px;
+}
+
+.quiz a{
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	text-decoration: none;
+}
+
+main{
+	padding: 20 30px;
+	width: 70%;
+	margin: auto;
+}
+
+#content-heading{
+	text-align: center;
+	font-size: 25px;
+}
+
+.content{
+	
+}
+
+.content section{
+	padding: 0 30px;
+	height: auto;
+}
+
+.head{
+	border-bottom: solid;
+	border-top: solid;
+}
+
+
+
+
+
+
+</style>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTMLFINAL</title>
+</head>
+<body>
+
+<div class="container">
+	<header>
+		<h1>Team Bee</h1>
+  		<h2>HTML5</h2>
+	</header>
+
+	<nav class="topnav">
+		<a class="Home" href="index.html">Home</a>
+		<a class="HTML" href="html.html">HTML</a>
+		<a class="CSS" href="css.html">CSS</a>
+		<a class="JS" href="javascript.html">JS</a>		
+	</nav>
+
+	<div class="dropdown">
+		<div class="button basics">
+			<a href="#basics"><button class="dropbtn">Basics of HTML</button></a>
+			  <div class="dropdown-content">
+			    <a href="#html">What is HTML</a>
+			    <a href="#editors">HTML Editors</a>
+			    <a href="#structure">Basic Structure</a>
+			    <a href="#display">Displaying HTML</a>
+			  </div>
+		</div>
+
+		<div class="button texts">	
+			<a href="#texts"><button class="dropbtn">HTML texts</button></a>
+			  <div class="dropdown-content">
+			    <a href="#headings">Headings</a>
+			    <a href="#paragraphs">Paragraphs</a>
+			    <a href="#links">Links</a>
+			    <a href="#lists">Lists</a>
+			    <a href="#breaks">Line breaks</a>
+			    <a href="#divisions">Divisions</a>
+			  </div>
+		</div>
+
+		<div class="button tables">	
+			<a href="#tables"><button class="dropbtn">HTML tables</button></a>
+		</div>
+
+		<div class="button forms">
+			<a href="#forms"><button class="dropbtn">HTML forms</button></a>
+		</div>
+
+		<div class="quiz">
+			<a href="quiz.html">Take HTML quiz</a>
+		</div>     
+	</div>
+
+<main>
+	<section id="content-heading">
+		<h1>Learn the basics of HTML and How to Create Table and Forms</h1>
+	</section>
+	<br>
+	<div class="content">
+		<section class="head" id="basics">
+			<h1>Basics of HTML</h1>
+		</section>
+		<section id="html">
+			<h3>What is HTML?</h3>
+			<p>HTML stands for Hypertext Markup Language. This markup language is used to create documents on the world wide web by using html tags and attributes. A web document is viewed in a web browser (chrome, mozilla, internet explorer, etc).</p>
+		</section>
+		<br>
+		<section id="editors">
+			<h3>HTML editors</h3>
+			<ul>
+				<li><a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a></li>
+				<li><a href="https://www.sublimetext.com/" target="_blank">Sublime Text3</a></li>
+				<li><a href="http://brackets.io/" target="_blank">Brackets</a></li>
+			</ul>
+		</section>
+		<br>
+		<section id="structure">
+			<h3>Basic HTML Structure</h3>
+			<p>&lt;!DOCTYPE html&gt;
+				<br>&lt;html&gt;
+				<br>&lt;head&gt;
+				<br>&lt;title&gt;TeamBee Tutorials&lt;/title&gt;
+				<br>&lt;/head&gt;
+				<br>&lt;body&gt;
+				<br>&lt;h1&gt;TeamBee&lt;/h1&gt;
+				<br>&lt;p&gt;HTML5 Tutorial&lt;/p&gt;
+				<br>&lt;/body&gt;
+				<br>&lt;/html&gt;
+			</p>
+			<ul>
+				<li>The&nbsp;&lt;!DOCTYPE html&gt;&nbsp;declaration defines this document to be HTML5</li>
+				<li>The&nbsp;&lt;html&gt;&nbsp;element is the root element of an HTML page</li>
+				<li>The&nbsp;&lt;head&gt;&nbsp;element contains meta information about the document</li>
+				<li>The&nbsp;&lt;title&gt;&nbsp;element specifies a title for the document</li>
+				<li>The&nbsp;&lt;body&gt;&nbsp;element contains the visible page content</li>
+				<li>The&nbsp;&lt;h1&gt;&nbsp;element defines a large heading</li>
+				<li>The&nbsp;&lt;p&gt;&nbsp;element defines a paragraph</li>
+			</ul>	
+		</section>
+		<br>
+		<section id="display">
+			<h3>Displaying an html Document</h3>
+			<p>HTML documents can be viewed using a web browser. Web browsers can detect errors that are made in an html document. After creating or as you create your web page, you can make necessary changes if your web page does not look the way you expect.</p>
+		</section>
+		<br>
+		<section class="head" id="texts">
+			<h1>Working with Texts</h1>
+		</section>
+		<section id="headings">
+			<h3>Creating Headings</h3>
+			<p>Headings are very important in a web page because it tells what a section is about. There are six headings in HTML, &lt;h1&gt; to &lt;h6&gt;. &lt;h1&gt; is the largest and &lt;h6&gt; is the smallest. Each heading can be created using a header tag. Use the following syntax to create a header tag: &lt;h1&gt;Heading 1&lt;/h1&gt;
+			<p>The differences between the 6 header tags.</p>
+			<h1>Heading 1</h1>
+			<h2>Heading 2</h2>
+			<h3>Heading 3</h3>
+			<h4>Heading 4</h4>
+			<h5>Heading 5</h5>
+			<h6>Heading 6</h6>
+		</section>
+		<br>
+		<section id="paragraphs">
+			<h3>Creating Paragraphs</h3>
+			<p>The <strong>P</strong> element is one of the most common and most used HTML element. It creates new lines for the block of text. In HTML, creating paragraph are very simple. Paragraphs can be created using a p tag. Use the following syntax to create a paragraph: <strong>&lt;p&gt;This is a paragraph.&lt;/p&gt;</strong></p>
+			<p>The differences between heading and paragraph.</p>
+			<h1>This is a heading</h1>
+			<p>This is a paragraph.</p>
+		</section>
+		<br>
+		<section id="links">
+			<h3>Creating Links</h3>
+			<p>The A element is used to create links which are used for navigation. You can click on a link and jump to another document or page. In HTML, links are defined using an &lt;a&gt; tag. Use the following syntax to create a link: <strong>&lt;a href="url"&gt;This is a Link.&lt;/a&gt;</strong><br>The href attribute specifies the destination of the link.</p>
+			<a href="#">This is a link.</a>
+			<br>
+			<a href="https://www.facebook.com/" target="_blank">This is a link to facebook</a>
+		</section>
+		<br>
+		<section id="lists">
+			<h3>Creating Lists</h3>
+			<p>Lists are used to group information so that it is easy to read and understand. There are three types of list in HTML.</p>
+			<ul>
+				<li><strong>unordered list</strong> - used to group a set of related items in no particular order. Use the following syntax:<br> <strong>&lt;ul&gt;&lt;li&gt;n&lt;/li&gt;&lt;/ul&gt;</strong></li>
+				<li><strong>ordered list</strong> - used to group a set of related items in a specific order.<br> <strong>&lt;ol&gt;&lt;li&gt;n&lt;/li&gt;&lt;/ol&gt;</strong></li>
+				<li><strong>description list</strong> - used to display name/value pairs such as terms and definitions.<br> <strong>&lt;dl&gt;&lt;dt&gt;Name&lt;/dt&gt;&lt;dd&gt;Value&lt;/dd&gt;&lt;/dl&gt;</strong></li>
+			</ul>
+			<p><strong>Unordered List</strong> - this list uses bullets, it is used for a set of items that will be placed in any order.</p>
+			<ul>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>JS</li>
+			</ul>
+			<p><strong>Ordered List</strong> - this list uses numbers and letters, it is used for a set of items that will be placed in a specific order. An example is how to create and view a webpage on your computer.</p>
+			<p>Numbers</p>
+			<ol>
+				<li>Open your text editor.</li>
+				<li>Write your html code.</li>
+				<li>Save your file</li>
+				<li>Open your webpage on your browser.</li>
+			</ol>
+			<p>Letters</p>
+			<ol type="a">
+				<li>Open your text editor.</li>
+				<li>Write your html code.</li>
+				<li>Save your file</li>
+				<li>Open your webpage on your browser.</li>
+			</ol>
+			<p><strong>Definition List</strong> - this list is used for listing definitions. An example is the definition of HTML and css.</p>
+			<dl>
+				<dt>HTML</dt>
+				<dd>Hypertext markup language</dd>
+				<dt>CSS</dt>
+				<dd>Cascading stylesheets</dd>
+			</dl>
+		</section>
+		<br>
+		<section id="breaks">
+			<h3>Line break</h3>
+			<p>To add a line break to your webpage, you can use the <strong>&lt;br&gt;</strong> tag. The website will leave a space on that line and proceeds to the next line. The <strong>&lt;br&gt;</strong> tag is a self closing tag.</p>
+			<p>HTML<br>&lt;br&gt;<br>line<br>&lt;br&gt;<br>&lt;br&gt;<br>break</p>
+			<p><strong>output</strong></p>
+			<p>HTML<br>line<br><br>break</p>
+		</section>
+		<br>
+		<section id="divisions">
+			<h3>Division (&lt;div&gt; tag)</h3>
+			<p>The &lt;div&gt; tag is used for creating divisions or sections in an HTML documents. It is often used as a container for other HTML elements and for creating web layouts by adding css styles.</p>
+			<pre>
+				&lt;div style="border-style: solid; height: 100px;"&gt;Header&lt;/div&gt;
+				&lt;div style="border-style: solid; width: 100px; height: 140px; float: left;"&gt;Sidebar&lt;/div&gt;
+				&lt;div style="border-style: solid; width: 310px; height: 140px; float: right;"&gt;Content&lt;/div&gt;
+			</pre>
+
+			<div style="border-style: solid; width: 30%; height: 250px;">
+				<div style="border-style: solid; height: 100px;">Header</div>
+				<div style="border-style: solid; width: 30%; height: 140px; float: left;">Sidebar</div>
+				<div style="border-style: solid; width: 65%; height: 140px; float: right;">Content</div>
+			</div>
+		</section>
+		<br>
+		<section class="head" id="tables">
+			<h1>HTML Tables</h1>
+		</section>
+		<section>	
+			<p>Tables are created to arrange webpage data like texts, images, links etc. into specific rows and columns. An HTML table is defined using the &lt;table&gt; tag.</p>
+			<p><strong>&lt;tr&gt;</strong> - table row.</p>
+			<p><strong>&lt;th&gt;</strong> - table header.</p>
+			<p><strong>&lt;td&gt;</strong> - table data or cell.</p>
+<pre>
+	&lt;table border="solid"&gt;
+		&lt;tr>
+			&lt;th&gt;HTML&lt;/th&gt;
+			&lt;th&gt;CSS&lt;/th&gt;
+			&lt;th&gt;JS&lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Hypertext Markup Language&lt;/td&gt;
+			&lt;td&gt;Cascading Stylesheets&lt;/td&gt;
+			&lt;td&gt;Javascript&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+</pre>
+			<h3>Example</h3>
+			<table border="solid">
+				<tr>
+					<th>HTML</th>
+					<th>CSS</th>
+					<th>JS</th>
+				</tr>
+				<tr>
+					<td>Hypertext Markup Language</td>
+					<td>Cascading Stylesheets</td>
+					<td>Javascript</td>
+				</tr>
+			</table>
+		</section>
+		<br>
+		<section class="head" id="forms">
+			<h1>HTML Forms</h1>
+		</section>
+		<section>	
+			<p>HTML forms are used for gathering information from the user. It collects user input. The are different types of input elements in form: <strong>text fields, checkboxes, radio buttons, submit buttons, etc.</strong></p>
+			<table border="1">
+				<caption>Common Form Elements</caption>
+				<tr>
+					<th>Field type</th>
+					<th>HTML tags and syntax</th>
+					<th>Description</th>
+					<th>Display</th>
+				</tr>
+				<tr>
+					<td>Text box</td>
+					<td>&lt;input type="text"&gt;</td>
+					<td>A single line text box where in users can input a single line data.</td>
+					<td>
+						<form>
+							<input type="text" placeholder="type a text">
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td>Password box</td>
+					<td>&lt;input type="password"&gt;</td>
+					<td>A single line text box that hides the user input. Used for passwords.</td>
+					<td>
+						<form>
+							<input type="password" placeholder="****">
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td>Radio Button</td>
+					<td>&lt;input type="radio"&gt;</td>
+					<td>A list of options where in a user can only select one option.</td>
+					<td>
+						<form>
+							<input type="radio" value="male" checked>Male
+							<input type="radio" value="female">Female
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td>Check box</td>
+					<td>&lt;input type="checkbox"&gt;</td>
+					<td>A list of options where in a user can select one or more options.</td>
+					<td>
+						<form>
+							<input type="checkbox" value="html">HTML
+							<input type="checkbox" value="html">CSS
+							<input type="checkbox" value="html">JS
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td>Text Area</td>
+					<td>&lt;textarea rows="15" cols="25"&gt;&lt;/textarea&gt;</td>
+					<td>A larger text box where in users can input a more data.</td>
+					<td>
+						<form>
+							<textarea rows="5" cols="15"></textarea>
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td>Submit button</td>
+					<td>&lt;input type="submit"&gt;</td>
+					<td>Submit button sends the form to the web server.</td>
+					<td>
+						<form>
+							<input type="submit">
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td>Reset button</td>
+					<td>&lt;input type="reset"&gt;</td>
+					<td>Reset button will clear all the data inputs in the form</td>
+					<td>
+						<form>
+							<input type="reset">
+						</form>
+					</td>
+				</tr>
+			</table>
+		</section>
+	</div>
+</main>
+</body>
+</html>
