@@ -1,0 +1,54 @@
+1. What does CSS stands for?
+	a. Cascade Style Sheets
+	b. Creating Style Sheets
+	c. Cascading Style Sheet
+
+2.  Who proposed CSS?
+	a. Tim Berners-Lee
+	b. Hakon Wium Lee
+	c. Bert Bos
+	d. b and c
+
+
+3. What are the 3 ways to apply CSS?
+	a. Eternal, Inline, Embedded
+	b. External, Internal, Inline
+	c. External, Internal, Embedded
+	d. Eternal, Internal, Inline
+
+4. Which is the correct CSS syntax?
+	a. p{color:blue;}
+	b. {p:color = blue;}
+	c. p:{"color = blue";}
+
+5. Which layer does the CSS controls?
+	a. Application
+	b. Session
+	c. Presentation
+
+6. What HTML tag is used in CSS rule to determine which style will be applied?
+	a. style
+	b. selector
+	c. property
+	d. declaration
+
+7. How to insert comment in a CSS file?
+	a. //This is a single comment
+	b. <!--This is a single comment->
+	c. //This is a single comment//
+	d. /*This is a single comment*/
+
+8. What is Type Selectors?
+	a. It combines same style into one declaration block
+	b. It is used to combine 2 or more elements.
+	c. It will select all matched elements in the document.
+
+9. Which selector is preceded by a number sign(#)?
+	a. Class Selector
+	b. Group Selector
+	c. ID Selector
+
+10. Which is an example of Nested Statement?
+	a. @charset
+	b. @supports
+	c. @import
