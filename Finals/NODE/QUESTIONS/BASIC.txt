@@ -1,0 +1,103 @@
+1. What does CSS stands for?
+	a. Cascade Style Sheet
+	b. Creating Style Sheet
+	c. Cascading Style Sheet
+
+2.  Who proposed CSS?
+	a. Tim Berners-Lee
+	b. Hakon Wium Lee
+	c. Bert Bos
+	d. b and c
+
+
+3. What are the 3 ways to apply CSS style to a HTML document?
+	a. Eternal, Inline, Embedded
+	b. External, Internal, Inline
+	c. External, Internal, Embedded
+	d. Eternal, Internal, Inline
+
+4. Which is the correct CSS syntax?
+	a. p{color:blue;}
+	b. {p:color = blue;}
+	c. p:{"color = blue";}
+
+5. Which layer does the CSS controls?
+	a. Application
+	b. Session
+	c. Presentation
+
+6. What HTML tag is used in CSS rule to determine which style will be applied?
+	a. style
+	b. selector
+	c. property
+	d. declaration
+
+7. How to insert comment in a CSS file?
+	a. //This is a single comment
+	b. <!--This is a single comment->
+	c. //This is a single comment//
+	d. /*This is a single comment*/
+
+8. What is Type Selectors?
+	a. It combines same style into one declaration block
+	b. It is used to combine 2 or more elements.
+	c. It will select all matched elements in the document.
+
+9. Which selector is preceded by a number sign(#)?
+	a. Class Selector
+	b. Group Selector
+	c. ID Selector
+
+10. Which is an example of Nested Statement?
+	a. @charset
+	b. @supports
+	c. @import
+
+11. What is a Shorthand Properties?
+	a. It allows authors set several property value in a single line.
+	b. It allows authors to write property values faster.
+	c. It allows authors to use a specific property value that can be used again.
+
+12. Which is NOT an example of Vendor specific extensions ?
+	a.-webkit-
+	b. -mz-
+	c. -o-
+
+13. What is a Descendant Selectors?
+	a. It is made up of two or more selectors but separated by ">".
+	b. It is made up of two or more selectors but separated by "<".
+	c. It is made up of two or more selectors with whitespace between two selectors.
+
+14. It is used to style elements based on values or attributes.
+	a. Value Selectors
+	b. Type Selectors
+	c. Attribute Selectors
+15. Which is NOT an example of Pseudo-Classes?
+	a. :first-letter
+	b. :first-number
+	c. :first-line
+
+16. What is a Custom Properties? 
+	a. It used by browser vendors as a prefix for the names of experimental or non-standard CSS properties.
+	b. Property names prefixed with "- -", that contains a specific value that can be used again in every part of the document. 
+	c. It allows authors set several property value in a single line.
+
+17. What is the use of Rule Set?
+	a. It is used to control the presentation of the webpage.
+	b. It is used to identify selectors that can be attached with other selectors.
+	c. It is used as a guideline in styling the content. 
+
+18. Which stylesheet is specified within the HEAD tag of HTML?
+	a. Inline
+	b. Internal
+	c. Linked
+
+19. What is Child Selector?
+	a.  It is made up of two or more selectors but separated by ">".
+	b. It is made up of two or more selectors but separated by "~".
+	c. It is made up of two or more selectors but separated by "+".
+
+20. It is used as a prefix for the names of non-standard CSS properties.
+	a. CSS variables 
+	b. Vendor specific extensions
+	c. Shorthand Properties
