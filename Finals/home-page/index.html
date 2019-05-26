@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+	<link rel = "icon" href = "../home-page/images/icons/b127.ico">
+
+	<title> Home Page | Team BEE </title>
+
+	<meta charset = "UTF-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+
+	<link rel = "stylesheet" type = "text/css" href = "https://www.w3schools.com/w3css/4/w3.css">
+	<link rel = "stylesheet" type="text/css" href = "https://fonts.googleapis.com/css?family=Raleway">
+	<link href = "https://www.1001freefonts.com/calligraphy-fonts.php">
+	<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel = "stylesheet" type = "text/css" href = "../home-page/CSS/style.css">
+</head>
+
+<body class = "INDEX w3-center">
+	<br>
+	<span class = "EXAM w3-wide w3-animate-opacity" id = "top"><b> W E L C O M E </b>
+		<br>
+	</span>
+
+	<br>
+	<div class = "LOGO">
+		<img src = "../home-page/images/icons/pen.ico" width = "200" height = "200" alt = "logo-aw">
+	</div>
+
+	<br> <br>
+		<div class = "H w3-container"></div>
+	<br> <br>
+
+	<span class = "REQUIRED w3-medium"> * Every field is <b>REQUIRED</b> to be filled up * </span>
+	<br> <br>
+
+	<ul class="w3-ul">
+		<li></li>
+		<li></li>
+	</ul>
+	<br>
+
+	<form action = "studentinfo.php" method = "post">
+		
+		<b class = "w3-medium"> Last Name : &nbsp</b>
+		<input type = "text" name = "lname" required>
+		<br> <br>
+
+		<b class = "w3-medium"> First Name : &nbsp</b>
+		<input type = "text" name = "fname" required>
+		<br> <br> <br> <br> <br>
+
+		<div class = "ONCE w3-xlarge"><b> - &nbsp You &nbsp may &nbsp now &nbsp choose / type &nbsp whatever &nbsp you &nbsp want &nbsp from &nbsp the &nbsp given &nbsp choices &nbsp below - </b></div>
+		<br> <br> <br> <br>
+
+		<ul class = "w3-ul w3-white w3-hover-shadow">
+			<li class = "w3-grey w3-padding-32">
+				<b class = "w3-large"> TOPIC : &nbsp</b>
+				<input type = "radio" name = "topic" value = "CSS" required> CSS &nbsp &nbsp
+				<input type = "radio" name = "topic" value = "JS" required> JS &nbsp &nbsp
+				<input type = "radio" name = "topic" value = "HTTP" required> HTTP <br>
+			</li>
+		</ul>
+
+		<br> <br>
+		<ul class = "w3-ul w3-white w3-hover-shadow">
+			<li class = "w3-padding-32">
+				<b class = "w3-large"> TYPE : &nbsp</b>
+				<input type = "radio" name = "type" value = "Multiple Choice" required> Multiple Choice &nbsp &nbsp
+				<input type = "radio" name = "type" value = "Identification" required> Identification
+			</li>
+		</ul>
+		<br> <br>
+
+		<ul class = "w3-ul w3-white w3-hover-shadow">
+			<li class = "w3-grey w3-padding-32">
+				<b class = "w3-large"> # OF QUESTIONS : &nbsp</b>
+				<input type = "text" name = "qnty" required>
+			</li>
+		</ul>
+
+		<br>
+		<ul class = "w3-ul"><li></li><li></li></ul>
+		<br>
+		<input type = "submit" value = "SUBMIT" class = "w3-button w3-red w3-large w3-animate-opacity w3-hover-green">
+	</form>
+
+	<br>
+	<font size = "3">
+		<p id = "login" class = "P-INDEX w3-animate-opacity"></p>
+	</font>
+
+	<!-- FOOTER -->
+	<footer class = "FOOTER">
+	    <a href = "#top" class = "w3-button">
+	      <i class = "fa fa-arrow-up w3-margin-right"></i> TO THE TOP 
+	    </a>
+
+	    <br> <br>
+	    <p class = "TEAM"> Team &nbsp BEE &nbsp | &nbsp All Rights Reserved ©️ 2019 </p>
+	</footer>
+</body>
+</html>
